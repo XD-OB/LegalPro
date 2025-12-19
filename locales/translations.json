@@ -1,0 +1,491 @@
+{
+  "en": {
+    "header": {
+      "services": "SERVICES",
+      "founder": "FOUNDER",
+      "contactUs": "Contact Us"
+    },
+    "hero": {
+      "badge": "PROFESSIONAL LEGAL SERVICES",
+      "title": "Legal Expertise You Can",
+      "titleHighlight": "Trust",
+      "subtitle": "Providing comprehensive legal solutions with integrity, expertise, and dedication to your success",
+      "contactButton": "Contact Us",
+      "whatsappButton": "WhatsApp Consultation"
+    },
+    "partnership": {
+      "badge": "YOUR LEGAL PARTNER",
+      "title": "Building Trust Through Excellence",
+      "description": "We believe in forming lasting partnerships with our clients, built on a foundation of trust, transparency, and exceptional legal expertise. Your success is our mission.",
+      "feature1": "Professional Legal Representation",
+      "feature2": "Trusted by Leading Businesses",
+      "feature3": "Decades of Combined Experience",
+      "feature4": "Client-Focused Solutions",
+      "clientsLabel": "Satisfied Clients"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive legal solutions tailored to your needs",
+      "items": [
+        {
+          "title": "Corporate Legal Advisory",
+          "description": "Expert guidance on corporate governance, mergers, acquisitions, and business transactions"
+        },
+        {
+          "title": "Contract Drafting & Review",
+          "description": "Professional contract preparation and thorough review to protect your interests"
+        },
+        {
+          "title": "Business Registration",
+          "description": "Complete assistance with business formation and regulatory compliance"
+        },
+        {
+          "title": "Compliance & Regulation",
+          "description": "Ensuring your business meets all legal and regulatory requirements"
+        },
+        {
+          "title": "Litigation Support",
+          "description": "Strategic representation in commercial disputes and legal proceedings"
+        },
+        {
+          "title": "Intellectual Property",
+          "description": "Protection and enforcement of patents, trademarks, and copyrights"
+        }
+      ]
+    },
+    "ceo": {
+      "title": "Meet Our Founder",
+      "name": "John Doe",
+      "position": "Founder & CEO",
+      "bio": "With over 15 years of experience in corporate law and business advisory, John Doe has established himself as a leading expert in the legal field. His expertise spans complex M&A transactions, business law, and regulatory compliance. Under his leadership, LegalPro has become a trusted name in legal services.",
+      "stats": [
+        {
+          "value": "15+",
+          "label": "Years Experience"
+        },
+        {
+          "value": "500+",
+          "label": "Happy Clients"
+        },
+        {
+          "value": "98%",
+          "label": "Success Rate"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Real experiences from businesses we've helped succeed",
+      "items": [
+        {
+          "name": "Emily Rodriguez",
+          "position": "CEO, TechStart Inc.",
+          "text": "LegalPro provided exceptional guidance during our company merger. Their attention to detail and professional approach made the entire process seamless."
+        },
+        {
+          "name": "Michael Chen",
+          "position": "Founder, Global Ventures",
+          "text": "The team's expertise in international business law was invaluable. They helped us navigate complex regulations with ease and professionalism."
+        },
+        {
+          "name": "Sarah Johnson",
+          "position": "Director, Innovation Labs",
+          "text": "Outstanding service! Their contract review saved us from potential legal issues. Highly recommended for any business legal needs."
+        },
+        {
+          "name": "David Martinez",
+          "position": "Managing Partner, Retail Solutions",
+          "text": "Professional, responsive, and incredibly knowledgeable. LegalPro has been our trusted legal partner for over 5 years."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "Ready to discuss your legal needs? Contact us today for a consultation",
+      "form": {
+        "nameLabel": "Full Name",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "john@example.com",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Tell us about your legal needs...",
+        "submitButton": "Send Message",
+        "successMessage": "Thank you for your message! We will get back to you soon."
+      },
+      "info": {
+        "phone": "Phone",
+        "phoneValue": "+1 (555) 123-4567",
+        "email": "Email",
+        "emailValue": "contact@legalpro.com",
+        "address": "Address",
+        "addressValue": "123 Legal Street, Suite 500\nNew York, NY 10001",
+        "locationTitle": "Our Location"
+      }
+    },
+    "footer": {
+      "brand": {
+        "description": "Professional legal services with expertise you can trust. Serving clients with integrity and excellence since 2008."
+      },
+      "practiceAreas": {
+        "title": "Practice Areas",
+        "items": [
+          "Corporate Law",
+          "Contract Law",
+          "Business Registration",
+          "Compliance",
+          "Litigation"
+        ]
+      },
+      "officeHours": {
+        "title": "Office Hours",
+        "hours": [
+          "Monday - Friday: 9:00 AM - 6:00 PM",
+          "Saturday: 10:00 AM - 2:00 PM",
+          "Sunday: Closed"
+        ],
+        "emergency": "Emergency consultations available 24/7"
+      },
+      "copyright": "LegalPro. All rights reserved.",
+      "links": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+      }
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "backToHome": "Back to Home",
+      "lastUpdated": "Last Updated"
+    },
+    "termsOfService": {
+      "title": "Terms of Service",
+      "backToHome": "Back to Home",
+      "lastUpdated": "Last Updated"
+    }
+  },
+  "fr": {
+    "header": {
+      "services": "SERVICES",
+      "founder": "FONDATEUR",
+      "contactUs": "Nous Contacter"
+    },
+    "hero": {
+      "badge": "SERVICES JURIDIQUES PROFESSIONNELS",
+      "title": "Une Expertise Juridique en qui Vous Pouvez",
+      "titleHighlight": "Avoir Confiance",
+      "subtitle": "Fournir des solutions juridiques complètes avec intégrité, expertise et dévouement à votre succès",
+      "contactButton": "Nous Contacter",
+      "whatsappButton": "Consultation WhatsApp"
+    },
+    "partnership": {
+      "badge": "VOTRE PARTENAIRE JURIDIQUE",
+      "title": "Bâtir la Confiance par l'Excellence",
+      "description": "Nous croyons en la formation de partenariats durables avec nos clients, fondés sur la confiance, la transparence et une expertise juridique exceptionnelle. Votre succès est notre mission.",
+      "feature1": "Représentation Juridique Professionnelle",
+      "feature2": "Approuvé par les Grandes Entreprises",
+      "feature3": "Décennies d'Expérience Combinée",
+      "feature4": "Solutions Centrées sur le Client",
+      "clientsLabel": "Clients Satisfaits"
+    },
+    "services": {
+      "title": "Nos Services",
+      "subtitle": "Des solutions juridiques complètes adaptées à vos besoins",
+      "items": [
+        {
+          "title": "Conseil Juridique d'Entreprise",
+          "description": "Conseils d'experts en gouvernance d'entreprise, fusions, acquisitions et transactions commerciales"
+        },
+        {
+          "title": "Rédaction et Révision de Contrats",
+          "description": "Préparation professionnelle de contrats et révision approfondie pour protéger vos intérêts"
+        },
+        {
+          "title": "Enregistrement d'Entreprise",
+          "description": "Assistance complète pour la création d'entreprise et la conformité réglementaire"
+        },
+        {
+          "title": "Conformité et Réglementation",
+          "description": "Assurer que votre entreprise respecte toutes les exigences légales et réglementaires"
+        },
+        {
+          "title": "Soutien en Litige",
+          "description": "Représentation stratégique dans les litiges commerciaux et les procédures juridiques"
+        },
+        {
+          "title": "Propriété Intellectuelle",
+          "description": "Protection et application des brevets, marques déposées et droits d'auteur"
+        }
+      ]
+    },
+    "ceo": {
+      "title": "Rencontrez Notre Fondateur",
+      "name": "John Doe",
+      "position": "Fondateur et PDG",
+      "bio": "Avec plus de 15 ans d'expérience en droit des sociétés et en conseil commercial, John Doe s'est imposé comme un expert de premier plan dans le domaine juridique. Son expertise couvre les transactions complexes de fusions-acquisitions, le droit des affaires et la conformité réglementaire. Sous sa direction, LegalPro est devenu un nom de confiance dans les services juridiques.",
+      "stats": [
+        {
+          "value": "15+",
+          "label": "Années d'Expérience"
+        },
+        {
+          "value": "500+",
+          "label": "Clients Satisfaits"
+        },
+        {
+          "value": "98%",
+          "label": "Taux de Réussite"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Ce Que Disent Nos Clients",
+      "subtitle": "Expériences réelles d'entreprises que nous avons aidées à réussir",
+      "items": [
+        {
+          "name": "Emily Rodriguez",
+          "position": "PDG, TechStart Inc.",
+          "text": "LegalPro a fourni des conseils exceptionnels lors de la fusion de notre entreprise. Leur attention aux détails et leur approche professionnelle ont rendu l'ensemble du processus fluide."
+        },
+        {
+          "name": "Michael Chen",
+          "position": "Fondateur, Global Ventures",
+          "text": "L'expertise de l'équipe en droit des affaires international a été inestimable. Ils nous ont aidés à naviguer dans des réglementations complexes avec aisance et professionnalisme."
+        },
+        {
+          "name": "Sarah Johnson",
+          "position": "Directrice, Innovation Labs",
+          "text": "Service exceptionnel! Leur révision de contrat nous a évité des problèmes juridiques potentiels. Hautement recommandé pour tous les besoins juridiques d'entreprise."
+        },
+        {
+          "name": "David Martinez",
+          "position": "Associé Gérant, Retail Solutions",
+          "text": "Professionnel, réactif et incroyablement compétent. LegalPro est notre partenaire juridique de confiance depuis plus de 5 ans."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Entrer en Contact",
+      "subtitle": "Prêt à discuter de vos besoins juridiques? Contactez-nous aujourd'hui pour une consultation",
+      "form": {
+        "nameLabel": "Nom Complet",
+        "namePlaceholder": "Jean Dupont",
+        "emailLabel": "Adresse E-mail",
+        "emailPlaceholder": "jean@exemple.com",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Parlez-nous de vos besoins juridiques...",
+        "submitButton": "Envoyer le Message",
+        "successMessage": "Merci pour votre message! Nous vous répondrons bientôt."
+      },
+      "info": {
+        "phone": "Téléphone",
+        "phoneValue": "+1 (555) 123-4567",
+        "email": "E-mail",
+        "emailValue": "contact@legalpro.com",
+        "address": "Adresse",
+        "addressValue": "123 Rue Légale, Suite 500\nNew York, NY 10001",
+        "locationTitle": "Notre Emplacement"
+      }
+    },
+    "footer": {
+      "brand": {
+        "description": "Services juridiques professionnels avec une expertise en qui vous pouvez avoir confiance. Au service des clients avec intégrité et excellence depuis 2008."
+      },
+      "practiceAreas": {
+        "title": "Domaines de Pratique",
+        "items": [
+          "Droit des Sociétés",
+          "Droit des Contrats",
+          "Enregistrement d'Entreprise",
+          "Conformité",
+          "Litige"
+        ]
+      },
+      "officeHours": {
+        "title": "Horaires d'Ouverture",
+        "hours": [
+          "Lundi - Vendredi: 9h00 - 18h00",
+          "Samedi: 10h00 - 14h00",
+          "Dimanche: Fermé"
+        ],
+        "emergency": "Consultations d'urgence disponibles 24h/24 et 7j/7"
+      },
+      "copyright": "LegalPro. Tous droits réservés.",
+      "links": {
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions d'Utilisation"
+      }
+    },
+    "privacyPolicy": {
+      "title": "Politique de Confidentialité",
+      "backToHome": "Retour à l'Accueil",
+      "lastUpdated": "Dernière Mise à Jour"
+    },
+    "termsOfService": {
+      "title": "Conditions d'Utilisation",
+      "backToHome": "Retour à l'Accueil",
+      "lastUpdated": "Dernière Mise à Jour"
+    }
+  },
+  "ar": {
+    "header": {
+      "services": "الخدمات",
+      "founder": "المؤسس",
+      "contactUs": "اتصل بنا"
+    },
+    "hero": {
+      "badge": "خدمات قانونية احترافية",
+      "title": "خبرة قانونية يمكنك",
+      "titleHighlight": "الوثوق بها",
+      "subtitle": "نقدم حلولاً قانونية شاملة بالنزاهة والخبرة والتفاني في نجاحك",
+      "contactButton": "اتصل بنا",
+      "whatsappButton": "استشارة واتساب"
+    },
+    "partnership": {
+      "badge": "شريكك القانوني",
+      "title": "بناء الثقة من خلال التميز",
+      "description": "نؤمن بتكوين شراكات دائمة مع عملائنا، مبنية على أساس الثقة والشفافية والخبرة القانونية الاستثنائية. نجاحك هو مهمتنا.",
+      "feature1": "تمثيل قانوني احترافي",
+      "feature2": "موثوق به من قبل الشركات الرائدة",
+      "feature3": "عقود من الخبرة المشتركة",
+      "feature4": "حلول تركز على العميل",
+      "clientsLabel": "عميل راضٍ"
+    },
+    "services": {
+      "title": "خدماتنا",
+      "subtitle": "حلول قانونية شاملة مصممة خصيصًا لتلبية احتياجاتك",
+      "items": [
+        {
+          "title": "الاستشارات القانونية للشركات",
+          "description": "إرشادات الخبراء حول حوكمة الشركات والاندماج والاستحواذ والمعاملات التجارية"
+        },
+        {
+          "title": "صياغة ومراجعة العقود",
+          "description": "إعداد عقود احترافية ومراجعة شاملة لحماية مصالحك"
+        },
+        {
+          "title": "تسجيل الأعمال",
+          "description": "مساعدة كاملة في تأسيس الأعمال والامتثال التنظيمي"
+        },
+        {
+          "title": "الامتثال والتنظيم",
+          "description": "ضمان استيفاء عملك لجميع المتطلبات القانونية والتنظيمية"
+        },
+        {
+          "title": "دعم التقاضي",
+          "description": "تمثيل استراتيجي في النزاعات التجارية والإجراءات القانونية"
+        },
+        {
+          "title": "الملكية الفكرية",
+          "description": "حماية وإنفاذ براءات الاختراع والعلامات التجارية وحقوق النشر"
+        }
+      ]
+    },
+    "ceo": {
+      "title": "تعرف على مؤسسنا",
+      "name": "جون دو",
+      "position": "المؤسس والرئيس التنفيذي",
+      "bio": "بخبرة تزيد عن 15 عامًا في قانون الشركات والاستشارات التجارية، أثبت جون دو نفسه كخبير رائد في المجال القانوني. تشمل خبرته معاملات الاندماج والاستحواذ المعقدة وقانون الأعمال والامتثال التنظيمي. تحت قيادته، أصبحت LegalPro اسمًا موثوقًا به في الخدمات القانونية.",
+      "stats": [
+        {
+          "value": "+15",
+          "label": "سنوات الخبرة"
+        },
+        {
+          "value": "+500",
+          "label": "عميل راضٍ"
+        },
+        {
+          "value": "%98",
+          "label": "معدل النجاح"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "ما يقوله عملاؤنا",
+      "subtitle": "تجارب حقيقية من الشركات التي ساعدناها على النجاح",
+      "items": [
+        {
+          "name": "إميلي رودريغيز",
+          "position": "الرئيس التنفيذي، TechStart Inc.",
+          "text": "قدمت LegalPro إرشادات استثنائية خلال اندماج شركتنا. اهتمامهم بالتفاصيل ونهجهم المهني جعل العملية بأكملها سلسة."
+        },
+        {
+          "name": "مايكل تشين",
+          "position": "المؤسس، Global Ventures",
+          "text": "كانت خبرة الفريق في قانون الأعمال الدولية لا تقدر بثمن. لقد ساعدونا في التنقل عبر اللوائح المعقدة بسهولة واحترافية."
+        },
+        {
+          "name": "سارة جونسون",
+          "position": "المديرة، Innovation Labs",
+          "text": "خدمة متميزة! مراجعتهم للعقد أنقذتنا من مشاكل قانونية محتملة. موصى به للغاية لأي احتياجات قانونية تجارية."
+        },
+        {
+          "name": "ديفيد مارتينيز",
+          "position": "الشريك الإداري، Retail Solutions",
+          "text": "محترفون ومستجيبون وعلى دراية بشكل لا يصدق. كانت LegalPro شريكنا القانوني الموثوق به لأكثر من 5 سنوات."
+        }
+      ]
+    },
+    "contact": {
+      "title": "ابق على تواصل",
+      "subtitle": "هل أنت مستعد لمناقشة احتياجاتك القانونية؟ اتصل بنا اليوم للحصول على استشارة",
+      "form": {
+        "nameLabel": "الاسم الكامل",
+        "namePlaceholder": "أحمد محمد",
+        "emailLabel": "البريد الإلكتروني",
+        "emailPlaceholder": "ahmed@example.com",
+        "messageLabel": "الرسالة",
+        "messagePlaceholder": "أخبرنا عن احتياجاتك القانونية...",
+        "submitButton": "إرسال الرسالة",
+        "successMessage": "شكرًا لك على رسالتك! سنعاود الاتصال بك قريبًا."
+      },
+      "info": {
+        "phone": "الهاتف",
+        "phoneValue": "+1 (555) 123-4567",
+        "email": "البريد الإلكتروني",
+        "emailValue": "contact@legalpro.com",
+        "address": "العنوان",
+        "addressValue": "123 شارع القانون، جناح 500\nنيويورك، NY 10001",
+        "locationTitle": "موقعنا"
+      }
+    },
+    "footer": {
+      "brand": {
+        "description": "خدمات قانونية احترافية بخبرة يمكنك الوثوق بها. نخدم العملاء بالنزاهة والتميز منذ عام 2008."
+      },
+      "practiceAreas": {
+        "title": "مجالات الممارسة",
+        "items": [
+          "قانون الشركات",
+          "قانون العقود",
+          "تسجيل الأعمال",
+          "الامتثال",
+          "التقاضي"
+        ]
+      },
+      "officeHours": {
+        "title": "ساعات العمل",
+        "hours": [
+          "الاثنين - الجمعة: 9:00 صباحًا - 6:00 مساءً",
+          "السبت: 10:00 صباحًا - 2:00 مساءً",
+          "الأحد: مغلق"
+        ],
+        "emergency": "استشارات الطوارئ متاحة على مدار الساعة طوال أيام الأسبوع"
+      },
+      "copyright": "LegalPro. جميع الحقوق محفوظة.",
+      "links": {
+        "privacy": "سياسة الخصوصية",
+        "terms": "شروط الخدمة"
+      }
+    },
+    "privacyPolicy": {
+      "title": "سياسة الخصوصية",
+      "backToHome": "العودة إلى الصفحة الرئيسية",
+      "lastUpdated": "آخر تحديث"
+    },
+    "termsOfService": {
+      "title": "شروط الخدمة",
+      "backToHome": "العودة إلى الصفحة الرئيسية",
+      "lastUpdated": "آخر تحديث"
+    }
+  }
+}

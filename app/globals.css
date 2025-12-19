@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-dark: #0f1e2e;
+  --primary-blue: #1a2f42;
+  --primary-gold: #c9a055;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Base font size - scales with viewport width */
+  font-size: 16px;
+}
+
+/* Responsive font scaling */
+@media (min-width: 640px) {
+  html {
+    font-size: calc(16px + 0.2vw);
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: calc(16px + 0.3vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: calc(16px + 0.4vw);
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: calc(16px + 0.5vw);
+  }
+}
+
+@media (min-width: 1536px) {
+  html {
+    font-size: calc(16px + 0.6vw);
+  }
+}
+
+/* Maximum font size cap for very large screens */
+@media (min-width: 2560px) {
+  html {
+    font-size: 24px;
+  }
+}
