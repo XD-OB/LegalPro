@@ -51,6 +51,14 @@ export default function Header() {
               {t.header.services}
             </Link>
             <Link
+              href="#formations"
+              className={`font-medium transition-colors hover:text-primary-gold ${
+                scrolled ? 'text-gray-700' : 'text-white'
+              }`}
+            >
+              {t.header.formations}
+            </Link>
+            <Link
               href="#ceo"
               className={`font-medium transition-colors hover:text-primary-gold ${
                 scrolled ? 'text-gray-700' : 'text-white'

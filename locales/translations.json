@@ -2,6 +2,7 @@
   "en": {
     "header": {
       "services": "SERVICES",
+      "formations": "FORMATIONS",
       "founder": "FOUNDER",
       "contactUs": "Contact Us"
     },
@@ -52,6 +53,42 @@
           "description": "Protection and enforcement of patents, trademarks, and copyrights"
         }
       ]
+    },
+    "formations": {
+      "title": "Our Training Programs",
+      "subtitle": "Professional training programs designed for your career advancement",
+      "items": [
+        {
+          "title": "LILMOKAWIL",
+          "description": "Training specially dedicated to project holders and future SME managers",
+          "slug": "lilmokawil"
+        },
+        {
+          "title": "L'EXPERT",
+          "description": "Preparatory cycle for DSCG exams UE 1 & 4",
+          "slug": "lexpert"
+        },
+        {
+          "title": "L'COMPTABLE",
+          "description": "General accounting and Sage certification",
+          "slug": "lcomptable"
+        },
+        {
+          "title": "L'AUDITEUR",
+          "description": "Accounting and financial audit",
+          "slug": "lauditeur"
+        }
+      ]
+    },
+    "clientsPartners": {
+      "title": "Our Clients & Partners",
+      "subtitle": "They trust us",
+      "stats": {
+        "clients": "Satisfied Clients",
+        "partners": "Partners",
+        "experience": "Years of Experience",
+        "trust": "Trust"
+      }
     },
     "ceo": {
       "title": "Meet Our Founder",
@@ -165,6 +202,7 @@
   "fr": {
     "header": {
       "services": "SERVICES",
+      "formations": "FORMATIONS",
       "founder": "FONDATEUR",
       "contactUs": "Nous Contacter"
     },
@@ -215,6 +253,42 @@
           "description": "Protection et application des brevets, marques déposées et droits d'auteur"
         }
       ]
+    },
+    "formations": {
+      "title": "Nos Formations",
+      "subtitle": "Programmes de formation professionnelle conçus pour l'avancement de votre carrière",
+      "items": [
+        {
+          "title": "LILMOKAWIL",
+          "description": "Formation spécialement dédiée aux porteurs de projets et futur manager de TPE – PME",
+          "slug": "lilmokawil"
+        },
+        {
+          "title": "L'EXPERT",
+          "description": "Cycle préparatoire aux examens de DSCG UE 1 ET 4",
+          "slug": "lexpert"
+        },
+        {
+          "title": "L'COMPTABLE",
+          "description": "Comptabilité générale et certification sage",
+          "slug": "lcomptable"
+        },
+        {
+          "title": "L'AUDITEUR",
+          "description": "Audit comptable et financier",
+          "slug": "lauditeur"
+        }
+      ]
+    },
+    "clientsPartners": {
+      "title": "Nos Clients & Partenaires",
+      "subtitle": "Ils nous font confiance",
+      "stats": {
+        "clients": "Clients Satisfaits",
+        "partners": "Partenaires",
+        "experience": "Années d'Expérience",
+        "trust": "Confiance"
+      }
     },
     "ceo": {
       "title": "Rencontrez Notre Fondateur",
@@ -328,6 +402,7 @@
   "ar": {
     "header": {
       "services": "الخدمات",
+      "formations": "البرامج التدريبية",
       "founder": "المؤسس",
       "contactUs": "اتصل بنا"
     },
@@ -378,6 +453,42 @@
           "description": "حماية وإنفاذ براءات الاختراع والعلامات التجارية وحقوق النشر"
         }
       ]
+    },
+    "formations": {
+      "title": "برامجنا التدريبية",
+      "subtitle": "برامج تدريبية مهنية مصممة للتقدم في حياتك المهنية",
+      "items": [
+        {
+          "title": "LILMOKAWIL",
+          "description": "تدريب مخصص لحاملي المشاريع ومديري المؤسسات الصغيرة والمتوسطة المستقبليين",
+          "slug": "lilmokawil"
+        },
+        {
+          "title": "L'EXPERT",
+          "description": "دورة تحضيرية لامتحانات DSCG UE 1 و 4",
+          "slug": "lexpert"
+        },
+        {
+          "title": "L'COMPTABLE",
+          "description": "المحاسبة العامة وشهادة Sage",
+          "slug": "lcomptable"
+        },
+        {
+          "title": "L'AUDITEUR",
+          "description": "التدقيق المحاسبي والمالي",
+          "slug": "lauditeur"
+        }
+      ]
+    },
+    "clientsPartners": {
+      "title": "عملاؤنا وشركاؤنا",
+      "subtitle": "يثقون بنا",
+      "stats": {
+        "clients": "عميل راضٍ",
+        "partners": "شريك",
+        "experience": "سنوات الخبرة",
+        "trust": "ثقة"
+      }
     },
     "ceo": {
       "title": "تعرف على مؤسسنا",

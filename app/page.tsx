@@ -3,6 +3,8 @@ import Hero from '@/components/Hero';
 import Partnership from '@/components/Partnership';
 import LegalDivider from '@/components/LegalDivider';
 import Services from '@/components/Services';
+import Formations from '@/components/Formations';
+import ClientsPartners from '@/components/ClientsPartners';
 import CEO from '@/components/CEO';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
@@ -16,6 +18,8 @@ export default function Home() {
       <Hero />
       <Partnership />
       <Services />
+      <Formations />
+      <ClientsPartners />
       <LegalDivider />
       <CEO />
       <Testimonials />
