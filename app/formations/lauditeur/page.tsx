@@ -3,78 +3,25 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Link from 'next/link';
-import { ArrowLeft, FileSearch, Clock, BookOpen, Award, Target, CheckCircle, Briefcase, FileText, Shield } from 'lucide-react';
+import { ArrowLeft, FileSearch, BookOpen, Award, Target, CheckCircle, Briefcase, Shield } from 'lucide-react';
 import { useState } from 'react';
 
-const programData = {
-  title: "AUDIT COMPTABLE ET FINANCIER",
-  objectifs: {
-    intro: "Dans un environnement où le contrôle des risques et la fiabilité des états financiers sont au premier plan des préoccupations des décideurs, la maîtrise des outils et des techniques d'audit s'impose aux différents acteurs de l'univers comptable et fiscal. En effet, maîtriser la démarche et les outils de l'audit permet de mieux appréhender un audit externe, soit de réaliser des missions d'audit de façon autonome.",
-    formation: "Le centre de formation ANDERSEN PARTNERS & CO, leader dans la formation des progicist et des métiers, organise une formation au métier de «Audit comptable et financier» le but de cette formation est d'être capable de :",
-    points: [
-      "Maîtriser les techniques et les outils de l'audit comptable et financier.",
-      "D'émettre une opinion sur la qualité de l'information financière produite par l'entreprise auditée.",
-      "Connaître le cadre légal de la fonction d'auditeur financier.",
-      "Établir les notes de synthèse et élaboration des rapports d'audit."
-    ]
-  },
-  sections: [
-    {
-      title: "LES CONCEPTS FONDAMENTAUX DE L'AUDIT",
-      color: "from-purple-600 to-purple-700",
-      items: [
-        "Définitions de l'audit.",
-        "Les objectifs ou les assertions d'audit.",
-        "Les normes d'audit.",
-        "Le cadre conceptuel des missions d'audit.",
-        "Le risque d'audit et la matérialité."
-      ]
-    },
-    {
-      title: "LA DEMARCHE DE L'AUDIT FINANCIER",
-      color: "from-indigo-600 to-indigo-700",
-      items: [
-        "Présentation de l'approche d'audit.",
-        "Prise de connaissance de l'entreprise et travaux préparatoires",
-        "Évaluation du contrôle interne et élaboration de la stratégie d'audit.",
-        "Exécution des contrôles substantiels.",
-        "Travaux de fin de mission."
-      ]
-    },
-    {
-      title: "LES TECHNIQUES D'AUDIT",
-      color: "from-blue-600 to-blue-700",
-      items: [
-        "Les procédures analytiques ISA 520.",
-        "Les procédures analytiques ISA 520.",
-        "Confirmation directe ou circularisations ISA 505.",
-        "Les dossiers et feuilles de travail ISA 230."
-      ]
-    },
-    {
-      title: "CAS PRATIQUE",
-      color: "from-cyan-600 to-cyan-700",
-      description: "Traitement d'un dossier pratique d'une mission d'audit comptable et financier (Cas réel)"
-    },
-    {
-      title: "NOTES DE SYNTHESE",
-      color: "from-teal-600 to-teal-700",
-      description: "Modèles de notes de synthèse dans lesquelles vous commentez et analysez les données collectées et les variations calculées en exprimant avec un style et formule professionnels les risques et anomalies soulevés."
-    },
-    {
-      title: "RAPPORT D'AUDIT",
-      color: "from-green-600 to-green-700",
-      items: [
-        "Comment formuler les recommandations et les actions correctives à mettre en œuvre ?",
-        "Modèles de rapports d'audit contractuel et légal."
-      ]
-    }
-  ]
-};
+// Static data that doesn't change across languages
+const sectionColors = [
+  "from-purple-600 to-purple-700",
+  "from-indigo-600 to-indigo-700",
+  "from-blue-600 to-blue-700",
+  "from-cyan-600 to-cyan-700",
+  "from-teal-600 to-teal-700",
+  "from-green-600 to-green-700"
+];
 
 export default function LauditeurPage() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
+  // Get translated program data
+  const programData = t.formationLauditeur;
 
   const toggleSection = (sectionIndex: number) => {
     const sectionId = `section-${sectionIndex}`;
@@ -97,7 +44,7 @@ export default function LauditeurPage() {
             className="inline-flex items-center gap-2 text-primary-gold hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            Retour aux Formations
+            {t.formationCommon.backToFormations}
           </Link>
 
           <motion.div
@@ -145,17 +92,17 @@ export default function LauditeurPage() {
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <Shield className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">6</p>
-                <p className="text-gray-300">Modules principaux</p>
+                <p className="text-gray-300">{t.formationCommon.mainModules}</p>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <BookOpen className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">ISA</p>
-                <p className="text-gray-300">Normes internationales</p>
+                <p className="text-gray-300">{t.formationCommon.internationalStandards}</p>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <Award className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">Cas Réel</p>
-                <p className="text-gray-300">Pratique professionnelle</p>
+                <p className="text-gray-300">{t.formationCommon.professionalPractice}</p>
               </div>
             </motion.div>
           </motion.div>
@@ -176,7 +123,7 @@ export default function LauditeurPage() {
             <div className="bg-gradient-to-br from-primary-gold/10 to-primary-blue/10 rounded-2xl p-8 md:p-12 border-2 border-primary-gold/20">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-dark font-playfair flex items-center gap-3">
                 <Target className="w-10 h-10 text-primary-gold" />
-                OBJECTIFS DE LA FORMATION
+                {t.formationCommon.objectives.toUpperCase()}
               </h2>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -201,7 +148,7 @@ export default function LauditeurPage() {
           {/* Programme Sections - All in ONE Card */}
           <div className="max-w-6xl mx-auto mb-16">
             <h2 className="text-4xl font-bold text-center mb-4 text-primary-dark font-playfair">
-              Programme de Formation
+              {t.formationCommon.program}
             </h2>
             <div className="w-24 h-1 bg-primary-gold mx-auto mb-12"></div>
 
@@ -214,10 +161,10 @@ export default function LauditeurPage() {
               {/* Single Card Header */}
               <div className="bg-gradient-to-r from-primary-dark to-primary-blue text-white rounded-t-2xl p-6 md:p-8">
                 <h3 className="text-2xl md:text-3xl font-bold font-playfair">
-                  Modules de Formation
+                  {t.formationCommon.trainingModules}
                 </h3>
                 <p className="text-white/90 text-lg mt-2">
-                  Programme complet d'audit comptable et financier
+                  {t.formationCommon.completeProgramAudit}
                 </p>
               </div>
 
@@ -227,25 +174,45 @@ export default function LauditeurPage() {
                   <div key={index} className="border-b border-gray-200 last:border-b-0">
                     <button
                       onClick={() => toggleSection(index)}
-                      className="w-full p-6 md:p-8 hover:bg-gray-50 transition-colors text-left group"
+                      className={`w-full p-6 md:p-8 hover:bg-gray-50 transition-colors group ${isRTL ? 'text-right' : 'text-left'}`}
                     >
                       <div className="flex items-start justify-between gap-4">
+                        {/* Arrow - appears on left in RTL */}
+                        {isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `section-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
+
+                        {/* Title */}
                         <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors">
+                          <h4 className={`text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors ${isRTL ? 'text-right' : ''}`}>
                             {section.title}
                           </h4>
                         </div>
-                        <motion.div
-                          animate={{
-                            rotate: expandedSection === `section-${index}` ? 180 : 0
-                          }}
-                          transition={{ duration: 0.3 }}
-                          className="text-primary-gold"
-                        >
-                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </motion.div>
+
+                        {/* Arrow - appears on right in LTR */}
+                        {!isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `section-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
                       </div>
                     </button>
 
@@ -258,13 +225,13 @@ export default function LauditeurPage() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 md:px-8 pb-6 md:pb-8 bg-gray-50">
+                      <div className={`px-6 md:px-8 pb-6 md:pb-8 bg-gray-50 ${isRTL ? 'text-right' : 'text-left'}`} dir={isRTL ? 'rtl' : 'ltr'}>
                         {section.description ? (
                           <p className="text-gray-700 text-lg leading-relaxed">{section.description}</p>
                         ) : (
                           <ul className="space-y-3">
                             {section.items?.map((item, itemIndex) => (
-                              <li key={itemIndex} className="flex items-start gap-3 text-gray-700">
+                              <li key={itemIndex} className={`flex items-start gap-3 text-gray-700 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                 <div className="w-1.5 h-1.5 bg-primary-gold rounded-full mt-2 flex-shrink-0"></div>
                                 <span className="text-lg">{item}</span>
                               </li>
@@ -296,17 +263,16 @@ export default function LauditeurPage() {
               <div className="relative z-10">
                 <Briefcase className="w-16 h-16 text-primary-gold mx-auto mb-6" />
                 <h3 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">
-                  Prêt à Devenir Auditeur Professionnel ?
+                  {programData.ctaTitle}
                 </h3>
                 <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                  Rejoignez notre formation L'AUDITEUR et maîtrisez les techniques d'audit comptable et financier conformes aux normes internationales ISA.
-                  Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions.
+                  {programData.ctaText}
                 </p>
                 <Link
                   href="/#contact"
                   className="inline-block bg-primary-gold text-primary-dark px-10 py-4 rounded-xl hover:bg-opacity-90 transition-all font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform"
                 >
-                  Contactez-Nous Maintenant
+                  {t.formationCommon.contactNow}
                 </Link>
               </div>
             </div>

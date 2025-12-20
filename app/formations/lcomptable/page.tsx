@@ -6,76 +6,12 @@ import Link from 'next/link';
 import { ArrowLeft, Calculator, Clock, BookOpen, Award, Target, CheckCircle, Calendar, DollarSign, Briefcase } from 'lucide-react';
 import { useState } from 'react';
 
-const programData = {
-  title: "Cours de comptabilité générale",
-  subtitle: "Comptabilité pratique saisie des dossiers sur SAGE",
-  certification: "Certification sage comptabilité",
-  startDate: "05/01/2025",
-  duration: "8 séances en fin de semaine",
-  schedule: "Chaque Dimanche de 09:00h à 12:30h",
-  sessionsPerWeek: "4 heures par semaine",
-  pricing: {
-    total: "1200 DHS",
-    monthly: "600.00 DHS Par Mois"
-  },
-  objectifs: [
-    "Maîtriser les fondamentaux et les techniques de la comptabilité générale,",
-    "Garantir une tenue pratique de la comptabilité générale des entreprises,",
-    "Maîtriser l'ensemble des opérations comptables,",
-    "Préparer les déclarations mensuelles de TVA et les cotisations sociales,",
-    "Tenir les comptes jusqu'au bilan,",
-    "Être en mesure d'organiser les travaux de clôture comptable,",
-    "Élaborer les états de synthèse",
-    "Réaliser les tableaux de bord, suivre le budget de trésorerie, analyser les flux.",
-    "Traiter les factures, les encours, les relances avec les clients ou les fournisseurs..."
-  ],
-  programme: [
-    {
-      title: "Introduction à la Comptabilité Générale",
-      description: "Principes fondamentaux de la comptabilité et cadre réglementaire"
-    },
-    {
-      title: "Dossier Immobilisation, traitement des opérations sur immobilisations",
-      description: "Gestion et traitement comptable des immobilisations corporelles et incorporelles"
-    },
-    {
-      title: "Dossier Fournisseur, Traitement des factures fournisseur",
-      description: "Traitement comptable des achats et gestion des comptes fournisseurs"
-    },
-    {
-      title: "Dossier Clients, Traitement des factures clients",
-      description: "Traitement comptable des ventes et gestion des comptes clients"
-    },
-    {
-      title: "Dossier Trésorerie, traitement des opérations de la trésorerie",
-      description: "Gestion de la trésorerie et rapprochements bancaires"
-    },
-    {
-      title: "Dossier Fiscalité et TVA",
-      description: "Gestion de la TVA et obligations fiscales"
-    },
-    {
-      title: "La gestion des opérations de paie",
-      description: "Traitement de la paie et charges sociales"
-    },
-    {
-      title: "Travaux de clôtures et analyse des comptes",
-      description: "Procédures de clôture comptable et analyse financière"
-    },
-    {
-      title: "Détermination de résultat fiscal et l'IS",
-      description: "Calcul du résultat fiscal et de l'impôt sur les sociétés"
-    },
-    {
-      title: "Etablir les états de synthèse...",
-      description: "Préparation des états financiers annuels"
-    }
-  ]
-};
-
 export default function LcomptablePage() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
+  // Get translated program data
+  const programData = t.formationLcomptable;
 
   const toggleSection = (sectionIndex: number) => {
     const sectionId = `section-${sectionIndex}`;
@@ -98,7 +34,7 @@ export default function LcomptablePage() {
             className="inline-flex items-center gap-2 text-primary-gold hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            Retour aux Formations
+            {t.formationCommon.backToFormations}
           </Link>
 
           <motion.div
@@ -162,17 +98,17 @@ export default function LcomptablePage() {
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <Clock className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">8</p>
-                <p className="text-gray-300">Séances</p>
+                <p className="text-gray-300">{t.formationCommon.sessions}</p>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <BookOpen className="w-8 h-8 text-primary-gold mb-3" />
-                <p className="text-3xl font-bold mb-1">4h</p>
-                <p className="text-gray-300">Par semaine</p>
+                <p className="text-3xl font-bold mb-1">4{t.formationCommon.hours.charAt(0)}</p>
+                <p className="text-gray-300">{t.formationCommon.perWeek}</p>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <Award className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">Sage</p>
-                <p className="text-gray-300">Certification</p>
+                <p className="text-gray-300">{t.formationCommon.certification}</p>
               </div>
             </motion.div>
           </motion.div>
@@ -193,7 +129,7 @@ export default function LcomptablePage() {
             <div className="bg-gradient-to-br from-primary-gold/10 to-primary-blue/10 rounded-2xl p-8 md:p-12 border-2 border-primary-gold/20">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-dark font-playfair flex items-center gap-3">
                 <Target className="w-10 h-10 text-primary-gold" />
-                OBJECTIF DE LA FORMATION
+                {t.formationCommon.objectives.toUpperCase()}
               </h2>
               <div className="space-y-4">
                 {programData.objectifs.map((objectif, index) => (
@@ -209,7 +145,7 @@ export default function LcomptablePage() {
           {/* Programme de Formation */}
           <div className="max-w-6xl mx-auto mb-16">
             <h2 className="text-4xl font-bold text-center mb-4 text-primary-dark font-playfair">
-              PROGRAMME DE FORMATION
+              {t.formationCommon.program.toUpperCase()}
             </h2>
             <div className="w-24 h-1 bg-primary-gold mx-auto mb-12"></div>
 
@@ -221,10 +157,10 @@ export default function LcomptablePage() {
             >
               <div className="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-t-2xl p-6 md:p-8">
                 <h3 className="text-2xl md:text-3xl font-bold font-playfair">
-                  Modules de Formation
+                  {t.formationCommon.trainingModules}
                 </h3>
                 <p className="text-white/90 text-lg mt-2">
-                  Programme complet de comptabilité générale et pratique sur SAGE
+                  {t.formationCommon.completeProgramSage}
                 </p>
               </div>
 
@@ -233,25 +169,45 @@ export default function LcomptablePage() {
                   <div key={index} className="border-b border-gray-200 last:border-b-0">
                     <button
                       onClick={() => toggleSection(index)}
-                      className="w-full p-6 md:p-8 hover:bg-gray-50 transition-colors text-left group"
+                      className={`w-full p-6 md:p-8 hover:bg-gray-50 transition-colors group ${isRTL ? 'text-right' : 'text-left'}`}
                     >
                       <div className="flex items-start justify-between gap-4">
+                        {/* Arrow - appears on left in RTL */}
+                        {isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `section-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
+
+                        {/* Title */}
                         <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors">
+                          <h4 className={`text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors ${isRTL ? 'text-right' : ''}`}>
                             {module.title}
                           </h4>
                         </div>
-                        <motion.div
-                          animate={{
-                            rotate: expandedSection === `section-${index}` ? 180 : 0
-                          }}
-                          transition={{ duration: 0.3 }}
-                          className="text-primary-gold"
-                        >
-                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </motion.div>
+
+                        {/* Arrow - appears on right in LTR */}
+                        {!isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `section-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
                       </div>
                     </button>
 
@@ -264,8 +220,8 @@ export default function LcomptablePage() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 md:px-8 pb-6 md:pb-8 bg-gray-50">
-                        <p className="text-gray-700 text-lg">{module.description}</p>
+                      <div className="px-6 md:px-8 pb-6 md:pb-8 bg-gray-50" dir={isRTL ? 'rtl' : 'ltr'}>
+                        <p className={`text-gray-700 text-lg ${isRTL ? 'text-right' : ''}`}>{module.description}</p>
                       </div>
                     </motion.div>
                   </div>
@@ -285,19 +241,19 @@ export default function LcomptablePage() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 md:p-12 border-2 border-amber-200">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-dark font-playfair text-center flex items-center justify-center gap-3">
                 <Calendar className="w-10 h-10 text-amber-600" />
-                Date de formation
+                {t.formationCommon.trainingDate}
               </h2>
 
               <div className="space-y-6">
                 <div className="bg-white rounded-lg p-6 border border-amber-200">
-                  <p className="text-gray-600 mb-2">Date début de formation</p>
+                  <p className="text-gray-600 mb-2">{t.formationCommon.startDate}</p>
                   <p className="text-2xl font-bold text-primary-dark">{programData.startDate}</p>
                 </div>
 
                 <div className="bg-white rounded-lg p-6 border border-amber-200">
-                  <h3 className="text-xl font-semibold text-primary-dark mb-4">Durée</h3>
+                  <h3 className="text-xl font-semibold text-primary-dark mb-4">{t.formationCommon.duration}</h3>
                   <p className="text-gray-700 mb-2">
-                    La formation se déroulera en {programData.duration} d'un volume de {programData.sessionsPerWeek}.
+                    {programData.durationText} {programData.duration} {programData.volumeText} {programData.sessionsPerWeek}.
                   </p>
                   <p className="text-lg font-semibold text-primary-dark">
                     {programData.schedule}
@@ -318,17 +274,17 @@ export default function LcomptablePage() {
             <div className="bg-gradient-to-br from-primary-gold/5 via-white to-primary-blue/5 rounded-2xl p-8 md:p-12 border-2 border-primary-gold/30 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-dark font-playfair text-center flex items-center justify-center gap-3">
                 <DollarSign className="w-10 h-10 text-primary-gold" />
-                Date de formation
+                {t.formationCommon.pricing}
               </h2>
 
               <div className="text-center mb-8">
                 <p className="text-gray-700 text-lg mb-6">
-                  Le prix de la formation est fixé à <strong className="text-primary-gold text-2xl">{programData.pricing.total}</strong>
+                  {t.formationCommon.fixedPrice} <strong className="text-primary-gold text-2xl">{programData.pricing.total}</strong>
                 </p>
                 <div className="bg-white rounded-xl p-8 border-2 border-green-200 hover:border-green-400 transition-colors inline-block">
-                  <p className="text-gray-600 mb-2">Paiement mensuel</p>
+                  <p className="text-gray-600 mb-2">{t.formationCommon.monthlyPayment}</p>
                   <p className="text-5xl font-bold text-primary-gold mb-2">{programData.pricing.monthly}</p>
-                  <p className="text-sm text-gray-500">8 séances de 4 heures</p>
+                  <p className="text-sm text-gray-500">{programData.sessionsInfo}</p>
                 </div>
               </div>
             </div>
@@ -351,17 +307,16 @@ export default function LcomptablePage() {
               <div className="relative z-10">
                 <Briefcase className="w-16 h-16 text-primary-gold mx-auto mb-6" />
                 <h3 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">
-                  Prêt à Devenir Comptable Certifié ?
+                  {programData.ctaTitle}
                 </h3>
                 <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                  Rejoignez notre formation L'COMPTABLE et maîtrisez la comptabilité générale avec la certification Sage.
-                  Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions.
+                  {programData.ctaText}
                 </p>
                 <Link
                   href="/#contact"
                   className="inline-block bg-primary-gold text-primary-dark px-10 py-4 rounded-xl hover:bg-opacity-90 transition-all font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform"
                 >
-                  Contactez-Nous Maintenant
+                  {t.formationCommon.contactNow}
                 </Link>
               </div>
             </div>

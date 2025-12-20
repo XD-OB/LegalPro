@@ -90,6 +90,178 @@
         "trust": "Trust"
       }
     },
+    "formationCommon": {
+      "backToFormations": "Back to Formations",
+      "objectives": "Training Objectives",
+      "program": "Training Program",
+      "trainingModules": "Training Modules",
+      "trainingDate": "Training Date",
+      "startDate": "Training Start Date",
+      "duration": "Duration",
+      "pricing": "Pricing",
+      "contactNow": "Contact Us Now",
+      "readyToJoin": "Ready to Join?",
+      "sessions": "Sessions",
+      "perWeek": "Per week",
+      "certification": "Certification",
+      "mainModules": "Main modules",
+      "totalDuration": "Total duration",
+      "phases": "Training phases",
+      "specializedModules": "Specialized modules",
+      "hours": "hours",
+      "contactForInfo": "Contact us for more information about registration and upcoming sessions.",
+      "detailedProgram": "Detailed Program",
+      "completeProgram": "Complete professional training program",
+      "monthlyPayment": "Monthly payment",
+      "fixedPrice": "The training price is set at",
+      "subjects": "subjects",
+      "internationalStandards": "International standards",
+      "professionalPractice": "Professional practice",
+      "completeProgramSage": "Complete general accounting and practical program on SAGE",
+      "completeProgramAudit": "Complete accounting and financial audit program"
+    },
+    "formationLilmokawil": {
+      "subtitle": "Training specially dedicated to project holders and future SME managers",
+      "introText": "This comprehensive training is designed to support entrepreneurs from project conception to implementation and daily management. It covers all essential aspects of creating and managing an SME.",
+      "objectivesList": [
+        "Master the fundamentals of business management",
+        "Understand legal and tax aspects",
+        "Develop a solid business plan",
+        "Effectively manage your business on a daily basis"
+      ],
+      "ctaTitle": "Ready to Launch Your Project?",
+      "ctaText": "Join our LILMOKAWIL training and transform your idea into a thriving business. Contact us for more information about registration and upcoming sessions.",
+      "sections": [
+        {
+          "title": "Pre-Creation Training",
+          "duration": "18 hours",
+          "modules": [
+            {
+              "title": "Introduction to Accounting and Business Finance",
+              "duration": "8 hours",
+              "topics": [
+                "Basic accounting principles",
+                "Corporate Tax: basis, declaration, payment",
+                "VAT: basis, declaration, payment",
+                "Single Professional Contribution",
+                "Self-entrepreneur taxation",
+                "Professional tax: basis, declaration, payment",
+                "Stamp duties",
+                "Tax exemptions",
+                "Procedure for requesting VAT exemption certificate"
+              ]
+            },
+            {
+              "title": "Legal Framework for Business Creation and Management",
+              "duration": "4 hours",
+              "topics": [
+                "Individual entrepreneurship: Main characteristics, Establishment procedure, Natural person",
+                "Limited Liability Company: Main characteristics, Establishment procedure, Legal entity",
+                "Public Limited Company: Main characteristics, Registration procedure"
+              ]
+            },
+            {
+              "title": "Development of Business Plan and Business Model",
+              "duration": "4 hours",
+              "topics": [
+                "Introduction: distinction between business plan and business model",
+                "Definition of business plan",
+                "Importance of establishing a business plan",
+                "Method for creating a business plan",
+                "Creating a business plan summary",
+                "Description of products and services to offer",
+                "Target customer segment",
+                "Market penetration strategy",
+                "Management team organization",
+                "Risk assessment",
+                "Financial situation forecast",
+                "Business plan example"
+              ]
+            },
+            {
+              "title": "Introduction to Digital Marketing and Communication Tools",
+              "duration": "2 hours",
+              "topics": [
+                "What is digital communication",
+                "Mistakes and pitfalls to avoid in digital",
+                "Key elements for successful digital communication",
+                "How to implement everything at minimal cost without scattering?"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Post-Creation",
+          "duration": "10 hours",
+          "modules": [
+            {
+              "title": "Master Management IT Tools",
+              "duration": "2 hours",
+              "topics": [
+                "Computer structure and operating systems",
+                "Overview of management software",
+                "Main features of Excel, Word, PowerPoint"
+              ]
+            },
+            {
+              "title": "Managing Daily Relationships with Bank, Supplier, and Customer",
+              "duration": "2 hours",
+              "topics": [
+                "Transparency in personalized relationships",
+                "Confidentiality towards the outside world",
+                "Useful advice to promote good decision-making",
+                "Fee optimization in Win-Win relationships",
+                "Anticipation and advice before decisions emerge",
+                "Pitfalls to avoid",
+                "Reflexes to develop"
+              ]
+            },
+            {
+              "title": "Understanding Project Management Fundamentals",
+              "duration": "2 hours",
+              "topics": [
+                "Different types of projects",
+                "Organizational structure of a project",
+                "Phases of a management project",
+                "Project life cycle",
+                "Implementation schedule",
+                "Cost tracking",
+                "Risks",
+                "Dashboard"
+              ]
+            },
+            {
+              "title": "Understanding Public Procurement Procedures",
+              "duration": "2 hours",
+              "topics": [
+                "Definition of a public market",
+                "Types of public markets",
+                "General conditions required of competitors",
+                "Competitor file documents",
+                "Technical file content",
+                "Additional file content",
+                "Financial offer content",
+                "Technical offer",
+                "Conditions to respect for offer presentation",
+                "How the bid opening procedure works"
+              ]
+            },
+            {
+              "title": "Risk Management",
+              "duration": "2 hours",
+              "topics": [
+                "How to prepare for customer and supplier",
+                "Management of unpaid debts",
+                "What is the primary source of unpaid debts",
+                "The relationship between S.M.A.R.T. objectives and reducing unpaid debts",
+                "Poorly managed pressure and unpaid debts",
+                "Road Map to avoid unpaid debts or manage them well when they become inevitable"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     "ceo": {
       "title": "Meet Our Founder",
       "name": "John Doe",
@@ -197,6 +369,283 @@
       "title": "Terms of Service",
       "backToHome": "Back to Home",
       "lastUpdated": "Last Updated"
+    },
+    "formationLcomptable": {
+      "title": "General Accounting Course",
+      "subtitle": "Practical accounting with case file processing on SAGE",
+      "certification": "Sage Accounting Certification",
+      "startDate": "05/01/2025",
+      "duration": "8 weekend sessions",
+      "schedule": "Every Sunday from 09:00 AM to 12:30 PM",
+      "sessionsPerWeek": "4 hours per week",
+      "pricing": {
+        "total": "1200 DHS",
+        "monthly": "600.00 DHS Per Month"
+      },
+      "objectifs": [
+        "Master the fundamentals and techniques of general accounting,",
+        "Ensure practical handling of company general accounting,",
+        "Master all accounting operations,",
+        "Prepare monthly VAT declarations and social contributions,",
+        "Maintain accounts up to the balance sheet,",
+        "Be able to organize closing accounting work,",
+        "Prepare financial statements",
+        "Create dashboards, track cash budget, analyze flows.",
+        "Process invoices, outstanding items, reminders with customers or suppliers..."
+      ],
+      "programme": [
+        {
+          "title": "Introduction to General Accounting",
+          "description": "Fundamental principles of accounting and regulatory framework"
+        },
+        {
+          "title": "Fixed Assets File, processing of fixed asset operations",
+          "description": "Management and accounting treatment of tangible and intangible fixed assets"
+        },
+        {
+          "title": "Supplier File, Processing supplier invoices",
+          "description": "Accounting treatment of purchases and supplier account management"
+        },
+        {
+          "title": "Customer File, Processing customer invoices",
+          "description": "Accounting treatment of sales and customer account management"
+        },
+        {
+          "title": "Treasury File, processing treasury operations",
+          "description": "Cash management and bank reconciliations"
+        },
+        {
+          "title": "Tax and VAT File",
+          "description": "VAT management and tax obligations"
+        },
+        {
+          "title": "Payroll operations management",
+          "description": "Payroll processing and social charges"
+        },
+        {
+          "title": "Closing work and account analysis",
+          "description": "Accounting closing procedures and financial analysis"
+        },
+        {
+          "title": "Determination of tax result and corporate tax",
+          "description": "Calculation of tax result and corporate income tax"
+        },
+        {
+          "title": "Prepare financial statements...",
+          "description": "Preparation of annual financial statements"
+        }
+      ],
+      "durationText": "The training will take place over",
+      "volumeText": "with a volume of",
+      "ctaTitle": "Ready to Become a Certified Accountant?",
+      "ctaText": "Join our L'COMPTABLE training and master general accounting with Sage certification. Contact us for more information about registration and upcoming sessions.",
+      "sessionsInfo": "8 sessions of 4 hours"
+    },
+    "formationLauditeur": {
+      "title": "ACCOUNTING AND FINANCIAL AUDIT",
+      "objectifs": {
+        "intro": "In an environment where risk control and reliability of financial statements are at the forefront of decision-makers' concerns, mastery of audit tools and techniques is essential for the various actors in the accounting and tax world. Indeed, mastering the audit approach and tools allows for a better understanding of an external audit, or to conduct audit missions independently.",
+        "formation": "The ANDERSEN PARTNERS & CO training center, a leader in software and business training, is organizing a training course on \"Accounting and Financial Audit\". The purpose of this training is to be able to:",
+        "points": [
+          "Master the techniques and tools of accounting and financial audit.",
+          "Issue an opinion on the quality of financial information produced by the audited company.",
+          "Know the legal framework of the financial auditor function.",
+          "Establish summary notes and prepare audit reports."
+        ]
+      },
+      "sections": [
+        {
+          "title": "FUNDAMENTAL CONCEPTS OF AUDIT",
+          "items": [
+            "Definitions of audit.",
+            "Objectives or audit assertions.",
+            "Audit standards.",
+            "Conceptual framework of audit missions.",
+            "Audit risk and materiality."
+          ]
+        },
+        {
+          "title": "FINANCIAL AUDIT APPROACH",
+          "items": [
+            "Presentation of the audit approach.",
+            "Understanding the company and preparatory work",
+            "Internal control evaluation and audit strategy development.",
+            "Execution of substantive controls.",
+            "End-of-mission work."
+          ]
+        },
+        {
+          "title": "AUDIT TECHNIQUES",
+          "items": [
+            "Analytical procedures ISA 520.",
+            "Analytical procedures ISA 520.",
+            "Direct confirmation or circularizations ISA 505.",
+            "Working files and papers ISA 230."
+          ]
+        },
+        {
+          "title": "PRACTICAL CASE",
+          "description": "Processing of a practical case file of an accounting and financial audit mission (Real case)"
+        },
+        {
+          "title": "SUMMARY NOTES",
+          "description": "Models of summary notes in which you comment and analyze the collected data and calculated variations by expressing with a professional style and formula the risks and anomalies raised."
+        },
+        {
+          "title": "AUDIT REPORT",
+          "items": [
+            "How to formulate recommendations and corrective actions to be implemented?",
+            "Models of contractual and legal audit reports."
+          ]
+        }
+      ],
+      "ctaTitle": "Ready to Become a Professional Auditor?",
+      "ctaText": "Join our L'AUDITEUR training and master accounting and financial audit techniques compliant with international ISA standards. Contact us for more information about registration and upcoming sessions."
+    },
+    "formationLexpert": {
+      "subtitle": "Preparatory cycle for DSCG exams UE 1 & 4",
+      "totalHours": 104,
+      "objectifsIntro": "The training objective is twofold:",
+      "objectifs": [
+        "Support our learners towards success in the DSCG",
+        "Strengthen the level in the most difficult DSCG units",
+        "Prepare for UEs that do not give rise to exemption for master's degree graduates"
+      ],
+      "pricing": {
+        "ue1": "15,390 DH",
+        "ue4": "13,980 DH",
+        "description": "Training fees"
+      },
+      "ue1": {
+        "title": "UE1 - Legal, Tax and Social Management",
+        "duration": "57h of in-person courses and 4h of remote exam",
+        "parties": [
+          {
+            "title": "Part 1: The company and its environment",
+            "duration": "15 hours",
+            "topics": [
+              "Founding principles: Negotiation, Formation, Execution",
+              "Diversity of contracts: Sales, Business, Distribution, Insurance",
+              "Constituent elements of the offense",
+              "Offenses",
+              "Criminal procedure"
+            ],
+            "subtopics": [
+              "Approval and taxation",
+              "Tax audit",
+              "Tax dispute and procedure"
+            ]
+          },
+          {
+            "title": "Part 2: Company development",
+            "duration": "6 hours",
+            "topics": [
+              "Directors and their relationship with shareholders",
+              "Board of Directors (BD)",
+              "Supervisory Board (SB)",
+              "Topics related to international business establishment"
+            ]
+          },
+          {
+            "title": "Part 3: Company financing",
+            "duration": "6 hours",
+            "topics": [
+              "Capital increase and reduction",
+              "Bond loans",
+              "Current account financing",
+              "Financing through financial markets",
+              "Crowdfunding",
+              "Bond loans",
+              "Credit guarantees"
+            ]
+          },
+          {
+            "title": "Part 4: From company to group",
+            "duration": "15 hours",
+            "topics": [
+              "Choice of appropriate tax regime",
+              "Determination of tax consolidation scope",
+              "Group contribution and operation",
+              "Company mergers",
+              "Partial asset contributions",
+              "Total or partial spin-offs",
+              "Universal transfer of assets"
+            ]
+          },
+          {
+            "title": "Part 5: Company sustainability",
+            "duration": "15 hours",
+            "topics": [
+              "The company in difficulty",
+              "Company transmission",
+              "Company dissolution"
+            ]
+          },
+          {
+            "title": "Part 6: Associations and other non-profit organizations",
+            "description": "Legal, tax and social aspects specific to associations and non-profit organizations."
+          }
+        ]
+      },
+      "ue4": {
+        "title": "UE4 - Accounting and Audit",
+        "duration": "47h of in-person courses and 4h of remote exam",
+        "description": "The reference framework recommends a training period of 47 hours. The UE4 subject is very comprehensive as it addresses the different program themes:",
+        "parties": [
+          {
+            "title": "Part 1: Restructuring operations",
+            "duration": "12 hours",
+            "description": "Within this theme, the different restructuring operations are addressed: merger, spin-off, partial asset contribution, simplified merger and TUP. The legal framework and accounting treatment of these operations must be known."
+          },
+          {
+            "title": "Part 2: International standards",
+            "duration": "15 hours",
+            "description": "This part introduces international standards (IFRS). The differences with French standards (PCG) are addressed. This study will help better understand the section on consolidated accounts."
+          },
+          {
+            "title": "Part 3: Group accounts",
+            "duration": "20 hours",
+            "topics": [
+              "What is a group? (Financial VS international)",
+              "What is its consolidation scope?",
+              "Know pre-consolidation adjustments (internal sale, leasing...)?",
+              "What are pre-consolidation differences (valuation and acquisition differences)?",
+              "Different consolidation methods for capital anticipation (full consolidation, proportional consolidation and equity method)?"
+            ]
+          }
+        ]
+      },
+      "preparationIntensive": {
+        "title": "Intensive summer preparation",
+        "description": "Training open to all but particularly suited to recently graduated candidates who seek to complete their studies with success in the DSCG as early as the following October.",
+        "practicalNotes": "Practical notes",
+        "reperes": [
+          {
+            "ue": "UE1 Legal, tax and social management",
+            "details": "48h of in-person courses and 4h of remote exam"
+          },
+          {
+            "ue": "UE4 Accounting and audit",
+            "details": "40h of in-person courses and 4h of remote exam"
+          }
+        ],
+        "summerDates": "Summer 2023 dates",
+        "dates": "UE4: from July 18 to 29",
+        "note": "As both UEs are very dense, it is possible to follow one of them first and postpone the revision materials which allows to refine all the last rules before the October exam."
+      },
+      "pricingTitle": "Training Fees",
+      "ue1Label": "Legal, tax and social management",
+      "ue4Label": "Accounting and audit",
+      "ue1Duration": "57h of courses + 4h exam",
+      "ue4Duration": "47h of courses + 4h exam",
+      "completeTraining": "Complete training (UE1 + UE4): Contact us for a preferential rate",
+      "stats": {
+        "totalDuration": "Total duration",
+        "uesPrepared": "UEs prepared",
+        "targetDiploma": "Target diploma"
+      },
+      "ctaTitle": "Ready to Pass your DSCG?",
+      "ctaText": "Join our L'EXPERT training and prepare effectively for UE 1 and 4 of the DSCG. Contact us for more information about registration and upcoming sessions."
     }
   },
   "fr": {
@@ -289,6 +738,178 @@
         "experience": "Années d'Expérience",
         "trust": "Confiance"
       }
+    },
+    "formationCommon": {
+      "backToFormations": "Retour aux Formations",
+      "objectives": "Objectifs de la Formation",
+      "program": "Programme de Formation",
+      "trainingModules": "Modules de Formation",
+      "trainingDate": "Date de Formation",
+      "startDate": "Date début de formation",
+      "duration": "Durée",
+      "pricing": "Tarif de la Formation",
+      "contactNow": "Contactez-Nous Maintenant",
+      "readyToJoin": "Prêt à Rejoindre?",
+      "sessions": "Séances",
+      "perWeek": "Par semaine",
+      "certification": "Certification",
+      "mainModules": "Modules principaux",
+      "totalDuration": "Durée totale",
+      "phases": "Phases de formation",
+      "specializedModules": "Modules spécialisés",
+      "hours": "heures",
+      "contactForInfo": "Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions.",
+      "detailedProgram": "Programme Détaillé",
+      "completeProgram": "Programme complet de formation professionnelle",
+      "monthlyPayment": "Paiement mensuel",
+      "fixedPrice": "Le prix de la formation est fixé à",
+      "subjects": "sujets",
+      "internationalStandards": "Normes internationales",
+      "professionalPractice": "Pratique professionnelle",
+      "completeProgramSage": "Programme complet de comptabilité générale et pratique sur SAGE",
+      "completeProgramAudit": "Programme complet d'audit comptable et financier"
+    },
+    "formationLilmokawil": {
+      "subtitle": "Formation spécialement dédiée aux porteurs de projets et futur manager de TPE – PME",
+      "introText": "Cette formation complète est conçue pour accompagner les entrepreneurs depuis la conception de leur projet jusqu'à sa réalisation et sa gestion quotidienne. Elle couvre tous les aspects essentiels de la création et de la gestion d'une TPE-PME.",
+      "objectivesList": [
+        "Maîtriser les fondamentaux de la gestion d'entreprise",
+        "Comprendre les aspects juridiques et fiscaux",
+        "Développer un business plan solide",
+        "Gérer efficacement votre entreprise au quotidien"
+      ],
+      "ctaTitle": "Prêt à Lancer Votre Projet ?",
+      "ctaText": "Rejoignez notre formation LILMOKAWIL et transformez votre idée en entreprise prospère. Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions.",
+      "sections": [
+        {
+          "title": "Formation pré-création",
+          "duration": "18 heures",
+          "modules": [
+            {
+              "title": "Initiation à la comptabilité et la finance de l'entreprise",
+              "duration": "8 heures",
+              "topics": [
+                "Principes comptables de base",
+                "IS : assiette, déclaration, paiement",
+                "TVA : assiette, déclaration, paiement",
+                "Contribution Professionnelle Unique",
+                "Fiscalité de l'auto-entrepreneur",
+                "Taxe professionnelle : assiette, déclaration, paiement",
+                "Droits de timbres",
+                "Exonérations fiscales",
+                "Procédure de demande d'attestation d'exonération de la TVA"
+              ]
+            },
+            {
+              "title": "Cadre juridique de la création et la gestion de l'entreprise",
+              "duration": "4 heures",
+              "topics": [
+                "Entrepreneuriat individuel : Principales caractéristiques, Procédure de constitution, Personne physique",
+                "La Société à responsabilité limitée : Principales caractéristiques, Procédure de constitution, Personne morale",
+                "La Société anonyme : Principales caractéristiques, Procédure d'immatriculation"
+              ]
+            },
+            {
+              "title": "Élaboration du business plan et business model",
+              "duration": "4 heures",
+              "topics": [
+                "Introduction : distinction entre le business plan et business model",
+                "Définition du business plan",
+                "Importance de l'établissement d'un business plan",
+                "Méthode de réalisation du business plan",
+                "Faire le résumé du business plan",
+                "Description des produits et services à offrir",
+                "Segment de clientèle ciblé",
+                "La stratégie de pénétration du marché",
+                "Organisation de l'équipe dirigeante",
+                "Évaluation des risques",
+                "Prévision de la situation financière",
+                "Exemple de business plan"
+              ]
+            },
+            {
+              "title": "S'initier au marketing digital et outils numériques de communication",
+              "duration": "2 heures",
+              "topics": [
+                "Qu'est-ce que la communication digitale",
+                "Les erreurs et les pièges à éviter dans le digital",
+                "Les éléments clés de la réussite de la communication digitale",
+                "Comment concrétiser le tout aux moindres frais sans se disperser ?"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Post-création",
+          "duration": "10 heures",
+          "modules": [
+            {
+              "title": "Maîtriser les outils informatiques de gestion",
+              "duration": "2 heures",
+              "topics": [
+                "Structure de l'ordinateur et systèmes d'exploitation",
+                "Aperçu sur les logiciels de gestion",
+                "Principales fonctionnalités de Excel, Word PowerPoint"
+              ]
+            },
+            {
+              "title": "Gérer sa relation quotidienne avec la banque, le fournisseur et le client",
+              "duration": "2 heures",
+              "topics": [
+                "Transparence dans la relation personnalisée",
+                "Confidentialité vis-à-vis du monde extérieur",
+                "Conseil utile à même de favoriser la bonne prise de décision",
+                "Optimisation des frais dans le Win-Win relationnel",
+                "Anticipation et conseil sur qu'éclosent les décisions",
+                "Pièges à éviter",
+                "Réflexes à développer"
+              ]
+            },
+            {
+              "title": "Connaître les fondements de gestion des projets",
+              "duration": "2 heures",
+              "topics": [
+                "Les différents types de projets",
+                "La structure organisationnelle d'un projet",
+                "Les phases d'un projet de gestion",
+                "Le cycle de vie du projet",
+                "Le planning de réalisation",
+                "Le suivi des coûts",
+                "Les risques",
+                "Le tableau de bord"
+              ]
+            },
+            {
+              "title": "Connaître les procédures de la commande publique",
+              "duration": "2 heures",
+              "topics": [
+                "Définition d'un marché public",
+                "Les types de marchés publics",
+                "Les conditions générales exigées des concurrents",
+                "Les documents du dossier du concurrent",
+                "Contenu du dossier technique",
+                "Contenu du dossier additif",
+                "Contient l'offre financière",
+                "L'offre technique",
+                "Les conditions à respecter pour la présentation de l'offre",
+                "Comment se déroule la procédure d'ouverture des plis"
+              ]
+            },
+            {
+              "title": "Management du risque",
+              "duration": "2 heures",
+              "topics": [
+                "Comment se préparer sur le client et le fournisseur",
+                "La gestion des impayés",
+                "Quelle est la première source des impayés",
+                "La relation entre des objectifs S.M.A.R.T. et la réduction des impayés",
+                "La pression mal gérée et les impayés",
+                "Road Map pour éviter les impayés ou les bien gérer quand ils deviennent inévitables"
+              ]
+            }
+          ]
+        }
+      ]
     },
     "ceo": {
       "title": "Rencontrez Notre Fondateur",
@@ -397,6 +1018,283 @@
       "title": "Conditions d'Utilisation",
       "backToHome": "Retour à l'Accueil",
       "lastUpdated": "Dernière Mise à Jour"
+    },
+    "formationLcomptable": {
+      "title": "Cours de comptabilité générale",
+      "subtitle": "Comptabilité pratique saisie des dossiers sur SAGE",
+      "certification": "Certification sage comptabilité",
+      "startDate": "05/01/2025",
+      "duration": "8 séances en fin de semaine",
+      "schedule": "Chaque Dimanche de 09:00h à 12:30h",
+      "sessionsPerWeek": "4 heures par semaine",
+      "pricing": {
+        "total": "1200 DHS",
+        "monthly": "600.00 DHS Par Mois"
+      },
+      "objectifs": [
+        "Maîtriser les fondamentaux et les techniques de la comptabilité générale,",
+        "Garantir une tenue pratique de la comptabilité générale des entreprises,",
+        "Maîtriser l'ensemble des opérations comptables,",
+        "Préparer les déclarations mensuelles de TVA et les cotisations sociales,",
+        "Tenir les comptes jusqu'au bilan,",
+        "Être en mesure d'organiser les travaux de clôture comptable,",
+        "Élaborer les états de synthèse",
+        "Réaliser les tableaux de bord, suivre le budget de trésorerie, analyser les flux.",
+        "Traiter les factures, les encours, les relances avec les clients ou les fournisseurs..."
+      ],
+      "programme": [
+        {
+          "title": "Introduction à la Comptabilité Générale",
+          "description": "Principes fondamentaux de la comptabilité et cadre réglementaire"
+        },
+        {
+          "title": "Dossier Immobilisation, traitement des opérations sur immobilisations",
+          "description": "Gestion et traitement comptable des immobilisations corporelles et incorporelles"
+        },
+        {
+          "title": "Dossier Fournisseur, Traitement des factures fournisseur",
+          "description": "Traitement comptable des achats et gestion des comptes fournisseurs"
+        },
+        {
+          "title": "Dossier Clients, Traitement des factures clients",
+          "description": "Traitement comptable des ventes et gestion des comptes clients"
+        },
+        {
+          "title": "Dossier Trésorerie, traitement des opérations de la trésorerie",
+          "description": "Gestion de la trésorerie et rapprochements bancaires"
+        },
+        {
+          "title": "Dossier Fiscalité et TVA",
+          "description": "Gestion de la TVA et obligations fiscales"
+        },
+        {
+          "title": "La gestion des opérations de paie",
+          "description": "Traitement de la paie et charges sociales"
+        },
+        {
+          "title": "Travaux de clôtures et analyse des comptes",
+          "description": "Procédures de clôture comptable et analyse financière"
+        },
+        {
+          "title": "Détermination de résultat fiscal et l'IS",
+          "description": "Calcul du résultat fiscal et de l'impôt sur les sociétés"
+        },
+        {
+          "title": "Etablir les états de synthèse...",
+          "description": "Préparation des états financiers annuels"
+        }
+      ],
+      "durationText": "La formation se déroulera en",
+      "volumeText": "d'un volume de",
+      "ctaTitle": "Prêt à Devenir Comptable Certifié ?",
+      "ctaText": "Rejoignez notre formation L'COMPTABLE et maîtrisez la comptabilité générale avec la certification Sage. Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions.",
+      "sessionsInfo": "8 séances de 4 heures"
+    },
+    "formationLauditeur": {
+      "title": "AUDIT COMPTABLE ET FINANCIER",
+      "objectifs": {
+        "intro": "Dans un environnement où le contrôle des risques et la fiabilité des états financiers sont au premier plan des préoccupations des décideurs, la maîtrise des outils et des techniques d'audit s'impose aux différents acteurs de l'univers comptable et fiscal. En effet, maîtriser la démarche et les outils de l'audit permet de mieux appréhender un audit externe, soit de réaliser des missions d'audit de façon autonome.",
+        "formation": "Le centre de formation ANDERSEN PARTNERS & CO, leader dans la formation des progicist et des métiers, organise une formation au métier de «Audit comptable et financier» le but de cette formation est d'être capable de :",
+        "points": [
+          "Maîtriser les techniques et les outils de l'audit comptable et financier.",
+          "D'émettre une opinion sur la qualité de l'information financière produite par l'entreprise auditée.",
+          "Connaître le cadre légal de la fonction d'auditeur financier.",
+          "Établir les notes de synthèse et élaboration des rapports d'audit."
+        ]
+      },
+      "sections": [
+        {
+          "title": "LES CONCEPTS FONDAMENTAUX DE L'AUDIT",
+          "items": [
+            "Définitions de l'audit.",
+            "Les objectifs ou les assertions d'audit.",
+            "Les normes d'audit.",
+            "Le cadre conceptuel des missions d'audit.",
+            "Le risque d'audit et la matérialité."
+          ]
+        },
+        {
+          "title": "LA DEMARCHE DE L'AUDIT FINANCIER",
+          "items": [
+            "Présentation de l'approche d'audit.",
+            "Prise de connaissance de l'entreprise et travaux préparatoires",
+            "Évaluation du contrôle interne et élaboration de la stratégie d'audit.",
+            "Exécution des contrôles substantiels.",
+            "Travaux de fin de mission."
+          ]
+        },
+        {
+          "title": "LES TECHNIQUES D'AUDIT",
+          "items": [
+            "Les procédures analytiques ISA 520.",
+            "Les procédures analytiques ISA 520.",
+            "Confirmation directe ou circularisations ISA 505.",
+            "Les dossiers et feuilles de travail ISA 230."
+          ]
+        },
+        {
+          "title": "CAS PRATIQUE",
+          "description": "Traitement d'un dossier pratique d'une mission d'audit comptable et financier (Cas réel)"
+        },
+        {
+          "title": "NOTES DE SYNTHESE",
+          "description": "Modèles de notes de synthèse dans lesquelles vous commentez et analysez les données collectées et les variations calculées en exprimant avec un style et formule professionnels les risques et anomalies soulevés."
+        },
+        {
+          "title": "RAPPORT D'AUDIT",
+          "items": [
+            "Comment formuler les recommandations et les actions correctives à mettre en œuvre ?",
+            "Modèles de rapports d'audit contractuel et légal."
+          ]
+        }
+      ],
+      "ctaTitle": "Prêt à Devenir Auditeur Professionnel ?",
+      "ctaText": "Rejoignez notre formation L'AUDITEUR et maîtrisez les techniques d'audit comptable et financier conformes aux normes internationales ISA. Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions."
+    },
+    "formationLexpert": {
+      "subtitle": "Cycle préparatoire aux examens de DSCG UE 1 ET 4",
+      "totalHours": 104,
+      "objectifsIntro": "L'objectif de la formation est double :",
+      "objectifs": [
+        "Accompagner nos apprenants vers la réussite au DSCG",
+        "Renforcer le niveau dans les UE les plus difficiles du DSCG",
+        "Préparer aux UE qui ne donnent pas lieu à une dispense pour les diplômés de masters"
+      ],
+      "pricing": {
+        "ue1": "15,390 DH",
+        "ue4": "13,980 DH",
+        "description": "Tarifs pour les formations"
+      },
+      "ue1": {
+        "title": "UE1 - Gestion juridique, fiscale et sociale",
+        "duration": "57h de cours en présentiel et 4h d'examen à distance",
+        "parties": [
+          {
+            "title": "Partie 1 : L'entreprise et son environnement",
+            "duration": "15 heures",
+            "topics": [
+              "Les principes fondateurs : La négociation, La formation, L'exécution",
+              "La diversité des contrats : De vente, D'entreprise, De distribution, D'assurance",
+              "Les éléments constitutifs de l'infraction",
+              "Les infractions",
+              "La procédure pénale"
+            ],
+            "subtopics": [
+              "Agrément et fiscalité",
+              "Le contrôle fiscal",
+              "La contestation et la procédure fiscale"
+            ]
+          },
+          {
+            "title": "Partie 2 : Le développement de l'entreprise",
+            "duration": "6 heures",
+            "topics": [
+              "Les dirigeants et leur relation avec les associés",
+              "Le Conseil d'Administration (CA)",
+              "Le Conseil de Surveillance (CS)",
+              "Les sujets liés à l'implantation des affaires internationales"
+            ]
+          },
+          {
+            "title": "Partie 3 : Le financement de l'entreprise",
+            "duration": "6 heures",
+            "topics": [
+              "Augmentation et réduction de capital",
+              "L'emprunt obligataire",
+              "Le financement par compte courant",
+              "Le financement par recours aux marchés financiers",
+              "Le crowdfunding",
+              "Les emprunts obligataires",
+              "Les garanties du crédit"
+            ]
+          },
+          {
+            "title": "Partie 4 : De l'entreprise au groupe",
+            "duration": "15 heures",
+            "topics": [
+              "Choix du régime fiscal approprié",
+              "Détermination du périmètre d'intégration fiscale",
+              "Contribution et fonctionnement du groupe",
+              "Fusions de sociétés",
+              "Apports partiels d'actifs",
+              "Scissions totales ou partielles",
+              "Transmission universelle de patrimoine"
+            ]
+          },
+          {
+            "title": "Partie 5 : La pérennité de l'entreprise",
+            "duration": "15 heures",
+            "topics": [
+              "L'entreprise en difficulté",
+              "La transmission de l'entreprise",
+              "La disparition de l'entreprise"
+            ]
+          },
+          {
+            "title": "Partie 6 : Les associations et autres organismes à but non lucratif",
+            "description": "Aspects juridiques, fiscaux et sociaux spécifiques aux associations et aux organismes à but non lucratif."
+          }
+        ]
+      },
+      "ue4": {
+        "title": "UE4 - Comptabilité et audit",
+        "duration": "47h de cours en présentiel et 4h d'examen à distance",
+        "description": "Le référentiel préconise une période de formation de 47 heures. Le sujet de l'UE4 est très complet puisqu'il aborde les différentes thèmes du programme :",
+        "parties": [
+          {
+            "title": "Partie 1 : Opérations de restructuration",
+            "duration": "12 heures",
+            "description": "Au sein de ce thème, les différentes opérations de restructuration sont abordées : fusion, scission, apport partiel d'actif, fusion simplifiée et TUP. Le cadre juridique et le traitement comptable de ces opérations sont à connaître."
+          },
+          {
+            "title": "Partie 2: Normes internationales",
+            "duration": "15 heures",
+            "description": "Cette partie introduit les normes internationales (IFRS). Les différences avec les normes françaises (PCG) sont abordés. Cette étude va permettre de mieux comprendre la partie sur la consolidation des comptes."
+          },
+          {
+            "title": "Partie 3: Comptes de groupe",
+            "duration": "20 heures",
+            "topics": [
+              "Qu'est-ce qu'un groupe ? (Financières VS internationales)",
+              "Quel est son périmètre de consolidation ?",
+              "Connaitre les retraitements de pré consolidation (cession interne, crédit bail...)?",
+              "Ce que sont les écarts de pré consolidation (écart d'évaluation et écart d'acquisition) ?",
+              "Les différentes méthodes de consolidation pour anticiper les capitaux (intégration globale, intégration proportionnelle et mise en équivalence) ?"
+            ]
+          }
+        ]
+      },
+      "preparationIntensive": {
+        "title": "La préparation intensive d'été",
+        "description": "Formation ouverte à tous mais particulièrement adaptée aux candidats récemment diplômés, qui cherchent à conclure leur cursus par un succès au DSCG dès le mois d'octobre suivant.",
+        "practicalNotes": "Repères pratiques",
+        "reperes": [
+          {
+            "ue": "UE1 Gestion juridique, fiscale et sociale",
+            "details": "48h de cours en présentiel et 4h d'examen à distance"
+          },
+          {
+            "ue": "UE4 Comptabilité et audit",
+            "details": "40h de cours en présentiel et 4h d'examen à distance"
+          }
+        ],
+        "summerDates": "Dates été 2023",
+        "dates": "UE4 : du 18 au 29 juillet",
+        "note": "Les deux UE étant très denses, il est possible de suivre l'une des deux dans un premier temps et de décaler les matières révisions qui permet de peaufiner toutes les dernières réglées avant l'examen d'octobre."
+      },
+      "pricingTitle": "Tarifs de Formation",
+      "ue1Label": "Gestion juridique, fiscale et sociale",
+      "ue4Label": "Comptabilité et audit",
+      "ue1Duration": "57h de cours + 4h d'examen",
+      "ue4Duration": "47h de cours + 4h d'examen",
+      "completeTraining": "Formation complète (UE1 + UE4): Contactez-nous pour un tarif préférentiel",
+      "stats": {
+        "totalDuration": "Durée totale",
+        "uesPrepared": "UE préparées",
+        "targetDiploma": "Diplôme visé"
+      },
+      "ctaTitle": "Prêt à Réussir votre DSCG ?",
+      "ctaText": "Rejoignez notre formation L'EXPERT et préparez-vous efficacement aux UE 1 et 4 du DSCG. Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions."
     }
   },
   "ar": {
@@ -489,6 +1387,178 @@
         "experience": "سنوات الخبرة",
         "trust": "ثقة"
       }
+    },
+    "formationCommon": {
+      "backToFormations": "العودة إلى البرامج التدريبية",
+      "objectives": "أهداف التدريب",
+      "program": "برنامج التدريب",
+      "trainingModules": "وحدات التدريب",
+      "trainingDate": "تاريخ التدريب",
+      "startDate": "تاريخ بدء التدريب",
+      "duration": "المدة",
+      "pricing": "التسعير",
+      "contactNow": "اتصل بنا الآن",
+      "readyToJoin": "هل أنت مستعد للانضمام؟",
+      "sessions": "الجلسات",
+      "perWeek": "في الأسبوع",
+      "certification": "الشهادة",
+      "mainModules": "الوحدات الرئيسية",
+      "totalDuration": "المدة الإجمالية",
+      "phases": "مراحل التدريب",
+      "specializedModules": "الوحدات المتخصصة",
+      "hours": "ساعات",
+      "contactForInfo": "اتصل بنا لمزيد من المعلومات حول التسجيل والدورات القادمة.",
+      "detailedProgram": "البرنامج المفصل",
+      "completeProgram": "برنامج تدريب مهني كامل",
+      "monthlyPayment": "الدفع الشهري",
+      "fixedPrice": "سعر التدريب محدد عند",
+      "subjects": "مواضيع",
+      "internationalStandards": "المعايير الدولية",
+      "professionalPractice": "الممارسة المهنية",
+      "completeProgramSage": "برنامج محاسبة عامة وعملية كامل على SAGE",
+      "completeProgramAudit": "برنامج تدقيق محاسبي ومالي كامل"
+    },
+    "formationLilmokawil": {
+      "subtitle": "تدريب مخصص لحاملي المشاريع ومديري المؤسسات الصغيرة والمتوسطة المستقبليين",
+      "introText": "تم تصميم هذا التدريب الشامل لدعم رواد الأعمال من مرحلة تصور المشروع حتى التنفيذ والإدارة اليومية. يغطي جميع الجوانب الأساسية لإنشاء وإدارة المؤسسات الصغيرة والمتوسطة.",
+      "objectivesList": [
+        "إتقان أساسيات إدارة الأعمال",
+        "فهم الجوانب القانونية والضريبية",
+        "تطوير خطة عمل متينة",
+        "إدارة عملك بفعالية على أساس يومي"
+      ],
+      "ctaTitle": "هل أنت مستعد لإطلاق مشروعك؟",
+      "ctaText": "انضم إلى تدريب LILMOKAWIL وحول فكرتك إلى مشروع مزدهر. اتصل بنا لمزيد من المعلومات حول التسجيل والدورات القادمة.",
+      "sections": [
+        {
+          "title": "التدريب قبل الإنشاء",
+          "duration": "18 ساعة",
+          "modules": [
+            {
+              "title": "مقدمة في المحاسبة وتمويل الأعمال",
+              "duration": "8 ساعات",
+              "topics": [
+                "مبادئ المحاسبة الأساسية",
+                "ضريبة الشركات: الأساس، الإقرار، الدفع",
+                "ضريبة القيمة المضافة: الأساس، الإقرار، الدفع",
+                "المساهمة المهنية الموحدة",
+                "الضرائب للأعمال الحرة",
+                "الضريبة المهنية: الأساس، الإقرار، الدفع",
+                "رسوم الطوابع",
+                "الإعفاءات الضريبية",
+                "إجراءات طلب شهادة الإعفاء من ضريبة القيمة المضافة"
+              ]
+            },
+            {
+              "title": "الإطار القانوني لإنشاء وإدارة الأعمال",
+              "duration": "4 ساعات",
+              "topics": [
+                "ريادة الأعمال الفردية: الخصائص الرئيسية، إجراءات التأسيس، الشخص الطبيعي",
+                "الشركة ذات المسؤولية المحدودة: الخصائص الرئيسية، إجراءات التأسيس، الشخص الاعتباري",
+                "الشركة المساهمة: الخصائص الرئيسية، إجراءات التسجيل"
+              ]
+            },
+            {
+              "title": "تطوير خطة العمل ونموذج الأعمال",
+              "duration": "4 ساعات",
+              "topics": [
+                "مقدمة: التمييز بين خطة العمل ونموذج الأعمال",
+                "تعريف خطة العمل",
+                "أهمية إنشاء خطة عمل",
+                "طريقة إنشاء خطة عمل",
+                "إعداد ملخص خطة العمل",
+                "وصف المنتجات والخدمات المقدمة",
+                "شريحة العملاء المستهدفة",
+                "استراتيجية اختراق السوق",
+                "تنظيم فريق الإدارة",
+                "تقييم المخاطر",
+                "التنبؤ بالوضع المالي",
+                "مثال على خطة عمل"
+              ]
+            },
+            {
+              "title": "مقدمة في التسويق الرقمي وأدوات الاتصال",
+              "duration": "ساعتان",
+              "topics": [
+                "ما هو الاتصال الرقمي",
+                "الأخطاء والمخاطر التي يجب تجنبها في الرقمي",
+                "العناصر الأساسية للنجاح في الاتصال الرقمي",
+                "كيفية تنفيذ كل شيء بأقل التكاليف دون التشتت؟"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "ما بعد الإنشاء",
+          "duration": "10 ساعات",
+          "modules": [
+            {
+              "title": "إتقان أدوات إدارة تكنولوجيا المعلومات",
+              "duration": "ساعتان",
+              "topics": [
+                "بنية الكمبيوتر وأنظمة التشغيل",
+                "نظرة عامة على برامج الإدارة",
+                "الميزات الرئيسية لـ Excel و Word و PowerPoint"
+              ]
+            },
+            {
+              "title": "إدارة العلاقات اليومية مع البنك والموردين والعملاء",
+              "duration": "ساعتان",
+              "topics": [
+                "الشفافية في العلاقات الشخصية",
+                "السرية تجاه العالم الخارجي",
+                "نصائح مفيدة لتعزيز اتخاذ القرارات الجيدة",
+                "تحسين الرسوم في العلاقات المربحة للجانبين",
+                "التوقع والنصح قبل ظهور القرارات",
+                "المخاطر التي يجب تجنبها",
+                "ردود الفعل التي يجب تطويرها"
+              ]
+            },
+            {
+              "title": "فهم أساسيات إدارة المشاريع",
+              "duration": "ساعتان",
+              "topics": [
+                "أنواع المشاريع المختلفة",
+                "الهيكل التنظيمي للمشروع",
+                "مراحل مشروع الإدارة",
+                "دورة حياة المشروع",
+                "جدول التنفيذ",
+                "تتبع التكاليف",
+                "المخاطر",
+                "لوحة القيادة"
+              ]
+            },
+            {
+              "title": "فهم إجراءات المشتريات العامة",
+              "duration": "ساعتان",
+              "topics": [
+                "تعريف السوق العام",
+                "أنواع الأسواق العامة",
+                "الشروط العامة المطلوبة من المتنافسين",
+                "وثائق ملف المتنافس",
+                "محتوى الملف الفني",
+                "محتوى الملف الإضافي",
+                "محتوى العرض المالي",
+                "العرض الفني",
+                "الشروط التي يجب احترامها لتقديم العرض",
+                "كيف تتم إجراءات فتح العطاءات"
+              ]
+            },
+            {
+              "title": "إدارة المخاطر",
+              "duration": "ساعتان",
+              "topics": [
+                "كيفية الاستعداد للعملاء والموردين",
+                "إدارة المدفوعات غير المسددة",
+                "ما هو المصدر الأساسي للمدفوعات غير المسددة",
+                "العلاقة بين أهداف S.M.A.R.T. وتقليل المدفوعات غير المسددة",
+                "الضغط السيئ الإدارة والمدفوعات غير المسددة",
+                "خارطة طريق لتجنب المدفوعات غير المسددة أو إدارتها بشكل جيد عندما تصبح حتمية"
+              ]
+            }
+          ]
+        }
+      ]
     },
     "ceo": {
       "title": "تعرف على مؤسسنا",
@@ -597,6 +1667,283 @@
       "title": "شروط الخدمة",
       "backToHome": "العودة إلى الصفحة الرئيسية",
       "lastUpdated": "آخر تحديث"
+    },
+    "formationLcomptable": {
+      "title": "دورة المحاسبة العامة",
+      "subtitle": "محاسبة عملية مع معالجة الملفات على SAGE",
+      "certification": "شهادة Sage للمحاسبة",
+      "startDate": "05/01/2025",
+      "duration": "8 جلسات في نهاية الأسبوع",
+      "schedule": "كل يوم أحد من 09:00 صباحاً إلى 12:30 ظهراً",
+      "sessionsPerWeek": "4 ساعات في الأسبوع",
+      "pricing": {
+        "total": "1200 درهم",
+        "monthly": "600.00 درهم شهرياً"
+      },
+      "objectifs": [
+        "إتقان أساسيات وتقنيات المحاسبة العامة،",
+        "ضمان التعامل العملي مع المحاسبة العامة للشركات،",
+        "إتقان جميع العمليات المحاسبية،",
+        "إعداد الإقرارات الشهرية لضريبة القيمة المضافة والمساهمات الاجتماعية،",
+        "مسك الحسابات حتى الميزانية العمومية،",
+        "القدرة على تنظيم أعمال الإقفال المحاسبي،",
+        "إعداد القوائم المالية",
+        "إنشاء لوحات القيادة، متابعة ميزانية الخزينة، تحليل التدفقات.",
+        "معالجة الفواتير والمستحقات والتذكيرات مع العملاء أو الموردين..."
+      ],
+      "programme": [
+        {
+          "title": "مقدمة في المحاسبة العامة",
+          "description": "المبادئ الأساسية للمحاسبة والإطار التنظيمي"
+        },
+        {
+          "title": "ملف الأصول الثابتة، معالجة عمليات الأصول الثابتة",
+          "description": "إدارة ومعالجة محاسبية للأصول الثابتة الملموسة وغير الملموسة"
+        },
+        {
+          "title": "ملف الموردين، معالجة فواتير الموردين",
+          "description": "المعالجة المحاسبية للمشتريات وإدارة حسابات الموردين"
+        },
+        {
+          "title": "ملف العملاء، معالجة فواتير العملاء",
+          "description": "المعالجة المحاسبية للمبيعات وإدارة حسابات العملاء"
+        },
+        {
+          "title": "ملف الخزينة، معالجة عمليات الخزينة",
+          "description": "إدارة الخزينة والتسويات البنكية"
+        },
+        {
+          "title": "ملف الضرائب وضريبة القيمة المضافة",
+          "description": "إدارة ضريبة القيمة المضافة والالتزامات الضريبية"
+        },
+        {
+          "title": "إدارة عمليات الرواتب",
+          "description": "معالجة الرواتب والأعباء الاجتماعية"
+        },
+        {
+          "title": "أعمال الإقفال وتحليل الحسابات",
+          "description": "إجراءات الإقفال المحاسبي والتحليل المالي"
+        },
+        {
+          "title": "تحديد النتيجة الضريبية وضريبة الشركات",
+          "description": "حساب النتيجة الضريبية وضريبة الدخل على الشركات"
+        },
+        {
+          "title": "إعداد القوائم المالية...",
+          "description": "إعداد القوائم المالية السنوية"
+        }
+      ],
+      "durationText": "سيتم التدريب على مدى",
+      "volumeText": "بحجم",
+      "ctaTitle": "هل أنت مستعد لتصبح محاسباً معتمداً؟",
+      "ctaText": "انضم إلى تدريب L'COMPTABLE وأتقن المحاسبة العامة مع شهادة Sage. اتصل بنا لمزيد من المعلومات حول التسجيل والدورات القادمة.",
+      "sessionsInfo": "8 جلسات من 4 ساعات"
+    },
+    "formationLauditeur": {
+      "title": "التدقيق المحاسبي والمالي",
+      "objectifs": {
+        "intro": "في بيئة يكون فيها التحكم في المخاطر وموثوقية القوائم المالية في مقدمة اهتمامات صناع القرار، فإن إتقان أدوات وتقنيات التدقيق أمر ضروري لمختلف الفاعلين في عالم المحاسبة والضرائب. في الواقع، إتقان نهج وأدوات التدقيق يسمح بفهم أفضل للتدقيق الخارجي، أو إجراء مهام التدقيق بشكل مستقل.",
+        "formation": "ينظم مركز التدريب ANDERSEN PARTNERS & CO، الرائد في تدريب البرمجيات والمهن، دورة تدريبية في \"التدقيق المحاسبي والمالي\". الغرض من هذا التدريب هو القدرة على:",
+        "points": [
+          "إتقان تقنيات وأدوات التدقيق المحاسبي والمالي.",
+          "إبداء رأي حول جودة المعلومات المالية التي تنتجها الشركة المدققة.",
+          "معرفة الإطار القانوني لوظيفة المدقق المالي.",
+          "إعداد مذكرات التلخيص وتقارير التدقيق."
+        ]
+      },
+      "sections": [
+        {
+          "title": "المفاهيم الأساسية للتدقيق",
+          "items": [
+            "تعريفات التدقيق.",
+            "الأهداف أو تأكيدات التدقيق.",
+            "معايير التدقيق.",
+            "الإطار المفاهيمي لمهام التدقيق.",
+            "مخاطر التدقيق والأهمية النسبية."
+          ]
+        },
+        {
+          "title": "منهج التدقيق المالي",
+          "items": [
+            "عرض نهج التدقيق.",
+            "فهم الشركة والأعمال التحضيرية",
+            "تقييم الرقابة الداخلية وتطوير استراتيجية التدقيق.",
+            "تنفيذ الضوابط الجوهرية.",
+            "أعمال نهاية المهمة."
+          ]
+        },
+        {
+          "title": "تقنيات التدقيق",
+          "items": [
+            "الإجراءات التحليلية ISA 520.",
+            "الإجراءات التحليلية ISA 520.",
+            "التأكيد المباشر أو المصادقات ISA 505.",
+            "ملفات وأوراق العمل ISA 230."
+          ]
+        },
+        {
+          "title": "حالة عملية",
+          "description": "معالجة ملف عملي لمهمة تدقيق محاسبي ومالي (حالة حقيقية)"
+        },
+        {
+          "title": "مذكرات التلخيص",
+          "description": "نماذج مذكرات التلخيص التي تعلق فيها وتحلل البيانات المجمعة والتباينات المحسوبة بالتعبير بأسلوب وصيغة مهنية عن المخاطر والشذوذات المثارة."
+        },
+        {
+          "title": "تقرير التدقيق",
+          "items": [
+            "كيفية صياغة التوصيات والإجراءات التصحيحية الواجب تنفيذها؟",
+            "نماذج تقارير التدقيق التعاقدي والقانوني."
+          ]
+        }
+      ],
+      "ctaTitle": "هل أنت مستعد لتصبح مدققاً محترفاً؟",
+      "ctaText": "انضم إلى تدريب L'AUDITEUR وأتقن تقنيات التدقيق المحاسبي والمالي المتوافقة مع معايير ISA الدولية. اتصل بنا لمزيد من المعلومات حول التسجيل والدورات القادمة."
+    },
+    "formationLexpert": {
+      "subtitle": "دورة تحضيرية لامتحانات DSCG UE 1 و 4",
+      "totalHours": 104,
+      "objectifsIntro": "هدف التدريب مزدوج:",
+      "objectifs": [
+        "دعم متدربينا نحو النجاح في DSCG",
+        "تعزيز المستوى في وحدات DSCG الأكثر صعوبة",
+        "التحضير للوحدات التي لا تمنح إعفاءً لخريجي الماجستير"
+      ],
+      "pricing": {
+        "ue1": "15,390 درهم",
+        "ue4": "13,980 درهم",
+        "description": "رسوم التدريب"
+      },
+      "ue1": {
+        "title": "UE1 - الإدارة القانونية والضريبية والاجتماعية",
+        "duration": "57 ساعة دورات حضورية و 4 ساعات امتحان عن بعد",
+        "parties": [
+          {
+            "title": "الجزء 1: الشركة وبيئتها",
+            "duration": "15 ساعة",
+            "topics": [
+              "المبادئ التأسيسية: التفاوض، التكوين، التنفيذ",
+              "تنوع العقود: البيع، الأعمال، التوزيع، التأمين",
+              "العناصر المكونة للجريمة",
+              "الجرائم",
+              "الإجراءات الجنائية"
+            ],
+            "subtopics": [
+              "الموافقة والضرائب",
+              "التدقيق الضريبي",
+              "النزاع والإجراءات الضريبية"
+            ]
+          },
+          {
+            "title": "الجزء 2: تطوير الشركة",
+            "duration": "6 ساعات",
+            "topics": [
+              "المديرون وعلاقتهم بالمساهمين",
+              "مجلس الإدارة",
+              "مجلس الرقابة",
+              "الموضوعات المتعلقة بإنشاء الأعمال الدولية"
+            ]
+          },
+          {
+            "title": "الجزء 3: تمويل الشركة",
+            "duration": "6 ساعات",
+            "topics": [
+              "زيادة وتخفيض رأس المال",
+              "قروض السندات",
+              "التمويل بالحساب الجاري",
+              "التمويل من خلال الأسواق المالية",
+              "التمويل الجماعي",
+              "قروض السندات",
+              "ضمانات الائتمان"
+            ]
+          },
+          {
+            "title": "الجزء 4: من الشركة إلى المجموعة",
+            "duration": "15 ساعة",
+            "topics": [
+              "اختيار النظام الضريبي المناسب",
+              "تحديد نطاق التوحيد الضريبي",
+              "مساهمة وتشغيل المجموعة",
+              "اندماج الشركات",
+              "مساهمات الأصول الجزئية",
+              "الانقسامات الكلية أو الجزئية",
+              "النقل الشامل للأصول"
+            ]
+          },
+          {
+            "title": "الجزء 5: استدامة الشركة",
+            "duration": "15 ساعة",
+            "topics": [
+              "الشركة في صعوبة",
+              "نقل الشركة",
+              "حل الشركة"
+            ]
+          },
+          {
+            "title": "الجزء 6: الجمعيات والمنظمات غير الربحية الأخرى",
+            "description": "الجوانب القانونية والضريبية والاجتماعية الخاصة بالجمعيات والمنظمات غير الربحية."
+          }
+        ]
+      },
+      "ue4": {
+        "title": "UE4 - المحاسبة والتدقيق",
+        "duration": "47 ساعة دورات حضورية و 4 ساعات امتحان عن بعد",
+        "description": "يوصي الإطار المرجعي بفترة تدريب مدتها 47 ساعة. موضوع UE4 شامل جداً لأنه يتناول مواضيع البرنامج المختلفة:",
+        "parties": [
+          {
+            "title": "الجزء 1: عمليات إعادة الهيكلة",
+            "duration": "12 ساعة",
+            "description": "ضمن هذا الموضوع، يتم تناول عمليات إعادة الهيكلة المختلفة: الاندماج، الانقسام، مساهمة الأصول الجزئية، الاندماج المبسط و TUP. يجب معرفة الإطار القانوني والمعالجة المحاسبية لهذه العمليات."
+          },
+          {
+            "title": "الجزء 2: المعايير الدولية",
+            "duration": "15 ساعة",
+            "description": "يقدم هذا الجزء المعايير الدولية (IFRS). يتم تناول الاختلافات مع المعايير الفرنسية (PCG). ستساعد هذه الدراسة على فهم أفضل لقسم الحسابات الموحدة."
+          },
+          {
+            "title": "الجزء 3: حسابات المجموعة",
+            "duration": "20 ساعة",
+            "topics": [
+              "ما هي المجموعة؟ (المالية مقابل الدولية)",
+              "ما هو نطاق توحيدها؟",
+              "معرفة تعديلات ما قبل التوحيد (البيع الداخلي، الإيجار التمويلي...)؟",
+              "ما هي فروقات ما قبل التوحيد (فروقات التقييم والاستحواذ)؟",
+              "طرق التوحيد المختلفة لتوقع رأس المال (التوحيد الكامل، التوحيد النسبي وطريقة حقوق الملكية)؟"
+            ]
+          }
+        ]
+      },
+      "preparationIntensive": {
+        "title": "التحضير الصيفي المكثف",
+        "description": "تدريب مفتوح للجميع ولكنه مناسب بشكل خاص للمرشحين المتخرجين حديثاً الذين يسعون لإتمام دراستهم بنجاح في DSCG في أكتوبر التالي.",
+        "practicalNotes": "ملاحظات عملية",
+        "reperes": [
+          {
+            "ue": "UE1 الإدارة القانونية والضريبية والاجتماعية",
+            "details": "48 ساعة دورات حضورية و 4 ساعات امتحان عن بعد"
+          },
+          {
+            "ue": "UE4 المحاسبة والتدقيق",
+            "details": "40 ساعة دورات حضورية و 4 ساعات امتحان عن بعد"
+          }
+        ],
+        "summerDates": "تواريخ صيف 2023",
+        "dates": "UE4: من 18 إلى 29 يوليو",
+        "note": "نظراً لكثافة الوحدتين، من الممكن متابعة إحداهما أولاً وتأجيل مواد المراجعة مما يسمح بصقل جميع القواعد الأخيرة قبل امتحان أكتوبر."
+      },
+      "pricingTitle": "رسوم التدريب",
+      "ue1Label": "الإدارة القانونية والضريبية والاجتماعية",
+      "ue4Label": "المحاسبة والتدقيق",
+      "ue1Duration": "57 ساعة دورات + 4 ساعات امتحان",
+      "ue4Duration": "47 ساعة دورات + 4 ساعات امتحان",
+      "completeTraining": "التدريب الكامل (UE1 + UE4): اتصل بنا للحصول على سعر تفضيلي",
+      "stats": {
+        "totalDuration": "المدة الإجمالية",
+        "uesPrepared": "الوحدات المحضرة",
+        "targetDiploma": "الدبلوم المستهدف"
+      },
+      "ctaTitle": "هل أنت مستعد للنجاح في DSCG؟",
+      "ctaText": "انضم إلى تدريب L'EXPERT واستعد بفعالية لـ UE 1 و 4 من DSCG. اتصل بنا لمزيد من المعلومات حول التسجيل والدورات القادمة."
     }
   }
 }

@@ -6,138 +6,12 @@ import Link from 'next/link';
 import { ArrowLeft, BookOpen, Clock, Award, Target, Briefcase, CheckCircle, Calendar, DollarSign } from 'lucide-react';
 import { useState } from 'react';
 
-const programData = {
-  totalHours: 104,
-  objectifs: [
-    "Accompagner nos apprenants vers la réussite au DSCG",
-    "Renforcer le niveau dans les UE les plus difficiles du DSCG",
-    "Préparer aux UE qui ne donnent pas lieu à une dispense pour les diplômés de masters"
-  ],
-  pricing: {
-    ue1: "15,390 DH",
-    ue4: "13,980 DH",
-    description: "Tarifs pour les formations"
-  },
-  ue1: {
-    title: "UE1 - Gestion juridique, fiscale et sociale",
-    duration: "57h de cours en présentiel et 4h d'examen à distance",
-    parties: [
-      {
-        title: "Partie 1 : L'entreprise et son environnement",
-        duration: "15 heures",
-        topics: [
-          "Les principes fondateurs : La négociation, La formation, L'exécution",
-          "La diversité des contrats : De vente, D'entreprise, De distribution, D'assurance",
-          "Les éléments constitutifs de l'infraction",
-          "Les infractions",
-          "La procédure pénale"
-        ],
-        subtopics: [
-          "Agrément et fiscalité",
-          "Le contrôle fiscal",
-          "La contestation et la procédure fiscale"
-        ]
-      },
-      {
-        title: "Partie 2 : Le développement de l'entreprise",
-        duration: "6 heures",
-        topics: [
-          "Les dirigeants et leur relation avec les associés",
-          "Le Conseil d'Administration (CA)",
-          "Le Conseil de Surveillance (CS)",
-          "Les sujets liés à l'implantation des affaires internationales"
-        ]
-      },
-      {
-        title: "Partie 3 : Le financement de l'entreprise",
-        duration: "6 heures",
-        topics: [
-          "Augmentation et réduction de capital",
-          "L'emprunt obligataire",
-          "Le financement par compte courant",
-          "Le financement par recours aux marchés financiers",
-          "Le crowdfunding",
-          "Les emprunts obligataires",
-          "Les garanties du crédit"
-        ]
-      },
-      {
-        title: "Partie 4 : De l'entreprise au groupe",
-        duration: "15 heures",
-        topics: [
-          "Choix du régime fiscal approprié",
-          "Détermination du périmètre d'intégration fiscale",
-          "Contribution et fonctionnement du groupe",
-          "Fusions de sociétés",
-          "Apports partiels d'actifs",
-          "Scissions totales ou partielles",
-          "Transmission universelle de patrimoine"
-        ]
-      },
-      {
-        title: "Partie 5 : La pérennité de l'entreprise",
-        duration: "15 heures",
-        topics: [
-          "L'entreprise en difficulté",
-          "La transmission de l'entreprise",
-          "La disparition de l'entreprise"
-        ]
-      },
-      {
-        title: "Partie 6 : Les associations et autres organismes à but non lucratif",
-        description: "Aspects juridiques, fiscaux et sociaux spécifiques aux associations et aux organismes à but non lucratif."
-      }
-    ]
-  },
-  ue4: {
-    title: "UE4 - Comptabilité et audit",
-    duration: "47h de cours en présentiel et 4h d'examen à distance",
-    description: "Le référentiel préconise une période de formation de 47 heures. Le sujet de l'UE4 est très complet puisqu'il aborde les différentes thèmes du programme :",
-    parties: [
-      {
-        title: "Partie 1 : Opérations de restructuration",
-        duration: "12 heures",
-        description: "Au sein de ce thème, les différentes opérations de restructuration sont abordées : fusion, scission, apport partiel d'actif, fusion simplifiée et TUP. Le cadre juridique et le traitement comptable de ces opérations sont à connaître."
-      },
-      {
-        title: "Partie 2: Normes internationales",
-        duration: "15 heures",
-        description: "Cette partie introduit les normes internationales (IFRS). Les différences avec les normes françaises (PCG) sont abordés. Cette étude va permettre de mieux comprendre la partie sur la consolidation des comptes."
-      },
-      {
-        title: "Partie 3: Comptes de groupe",
-        duration: "20 heures",
-        topics: [
-          "Qu'est-ce qu'un groupe ? (Financières VS internationales)",
-          "Quel est son périmètre de consolidation ?",
-          "Connaitre les retraitements de pré consolidation (cession interne, crédit bail...)?",
-          "Ce que sont les écarts de pré consolidation (écart d'évaluation et écart d'acquisition) ?",
-          "Les différentes méthodes de consolidation pour anticiper les capitaux (intégration globale, intégration proportionnelle et mise en équivalence) ?"
-        ]
-      }
-    ]
-  },
-  preparationIntensive: {
-    title: "La préparation intensive d'été",
-    description: "Formation ouverte à tous mais particulièrement adaptée aux candidats récemment diplômés, qui cherchent à conclure leur cursus par un succès au DSCG dès le mois d'octobre suivant.",
-    reperes: [
-      {
-        ue: "UE1 Gestion juridique, fiscale et sociale",
-        details: "48h de cours en présentiel et 4h d'examen à distance"
-      },
-      {
-        ue: "UE4 Comptabilité et audit",
-        details: "40h de cours en présentiel et 4h d'examen à distance"
-      }
-    ],
-    dates: "UE4 : du 18 au 29 juillet",
-    note: "Les deux UE étant très denses, il est possible de suivre l'une des deux dans un premier temps et de décaler les matières révisions qui permet de peaufiner toutes les dernières réglées avant l'examen d'octobre."
-  }
-};
-
 export default function LexpertPage() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
+  // Get translated program data
+  const programData = t.formationLexpert;
 
   const toggleSection = (sectionId: string) => {
     setExpandedSection(expandedSection === sectionId ? null : sectionId);
@@ -159,7 +33,7 @@ export default function LexpertPage() {
             className="inline-flex items-center gap-2 text-primary-gold hover:text-white transition-colors mb-8 group"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-            Retour aux Formations
+            {t.formationCommon.backToFormations}
           </Link>
 
           <motion.div
@@ -192,7 +66,7 @@ export default function LexpertPage() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="text-xl md:text-2xl text-gray-200 leading-relaxed"
                 >
-                  Cycle préparatoire aux examens de DSCG UE 1 ET 4
+                  {programData.subtitle}
                 </motion.p>
               </div>
             </div>
@@ -207,17 +81,17 @@ export default function LexpertPage() {
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <Clock className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">{programData.totalHours}h</p>
-                <p className="text-gray-300">Durée totale</p>
+                <p className="text-gray-300">{programData.stats.totalDuration}</p>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <BookOpen className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">2</p>
-                <p className="text-gray-300">UE préparées</p>
+                <p className="text-gray-300">{programData.stats.uesPrepared}</p>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-6 border border-white border-opacity-20">
                 <Award className="w-8 h-8 text-primary-gold mb-3" />
                 <p className="text-3xl font-bold mb-1">DSCG</p>
-                <p className="text-gray-300">Diplôme visé</p>
+                <p className="text-gray-300">{programData.stats.targetDiploma}</p>
               </div>
             </motion.div>
           </motion.div>
@@ -238,10 +112,10 @@ export default function LexpertPage() {
             <div className="bg-gradient-to-br from-primary-gold/10 to-primary-blue/10 rounded-2xl p-8 md:p-12 border-2 border-primary-gold/20">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-dark font-playfair flex items-center gap-3">
                 <Target className="w-10 h-10 text-primary-gold" />
-                Objectifs de la Formation
+                {t.formationCommon.objectives}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                L'objectif de la formation est double :
+                {programData.objectifsIntro}
               </p>
               <div className="space-y-4">
                 {programData.objectifs.map((objectif, index) => (
@@ -272,7 +146,7 @@ export default function LexpertPage() {
                       {programData.ue1.duration}
                     </p>
                     <div className="inline-block bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/30">
-                      <p className="text-xs text-white/80 mb-1">Tarif</p>
+                      <p className="text-xs text-white/80 mb-1">{t.formationCommon.pricing}</p>
                       <p className="text-2xl font-bold text-white">{programData.pricing.ue1}</p>
                     </div>
                   </div>
@@ -284,33 +158,55 @@ export default function LexpertPage() {
                   <div key={index} className="border-b border-gray-200 last:border-b-0">
                     <button
                       onClick={() => toggleSection(`ue1-${index}`)}
-                      className="w-full p-6 md:p-8 hover:bg-gray-50 transition-colors text-left group"
+                      className={`w-full p-6 md:p-8 hover:bg-gray-50 transition-colors group ${isRTL ? 'text-right' : 'text-left'}`}
                     >
                       <div className="flex items-start justify-between gap-4">
+                        {/* Arrow - appears on left in RTL */}
+                        {isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `ue1-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
+
+                        {/* Title */}
                         <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors">
+                          <h4 className={`text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors ${isRTL ? 'text-right' : ''}`}>
                             {partie.title}
                           </h4>
-                          {partie.duration && (
-                            <div className="flex items-center gap-4 text-sm text-gray-600">
-                              <span className="flex items-center gap-1">
-                                <Clock className="w-4 h-4" />
-                                {partie.duration}
-                              </span>
-                            </div>
-                          )}
                         </div>
-                        <motion.div
-                          animate={{
-                            rotate: expandedSection === `ue1-${index}` ? 180 : 0
-                          }}
-                          transition={{ duration: 0.3 }}
-                          className="text-primary-gold"
-                        >
-                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </motion.div>
+
+                        {/* Duration - appears between title and arrow */}
+                        {partie.duration && (
+                          <div className={`flex items-center gap-4 text-sm text-gray-600 flex-shrink-0 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                            <span className={`flex items-center gap-1 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                              <Clock className="w-4 h-4" />
+                              {partie.duration}
+                            </span>
+                          </div>
+                        )}
+
+                        {/* Arrow - appears on right in LTR */}
+                        {!isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `ue1-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
                       </div>
                     </button>
 
@@ -323,12 +219,12 @@ export default function LexpertPage() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 md:px-8 pb-6 md:pb-8 bg-gray-50">
+                      <div className={`px-6 md:px-8 pb-6 md:pb-8 bg-gray-50 ${isRTL ? 'text-right' : 'text-left'}`} dir={isRTL ? 'rtl' : 'ltr'}>
                         {partie.description && <p className="text-gray-700 mb-4">{partie.description}</p>}
                         {partie.topics && (
                           <ul className="space-y-3">
                             {partie.topics.map((topic, topicIndex) => (
-                              <li key={topicIndex} className="flex items-start gap-3 text-gray-700">
+                              <li key={topicIndex} className={`flex items-start gap-3 text-gray-700 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                 <div className="w-1.5 h-1.5 bg-primary-gold rounded-full mt-2 flex-shrink-0"></div>
                                 <span>{topic}</span>
                               </li>
@@ -336,9 +232,9 @@ export default function LexpertPage() {
                           </ul>
                         )}
                         {partie.subtopics && (
-                          <ul className="space-y-3 mt-4">
+                          <ul className={`space-y-3 mt-4 ${isRTL ? 'mr-4' : 'ml-4'}`}>
                             {partie.subtopics.map((subtopic, subIndex) => (
-                              <li key={subIndex} className="flex items-start gap-3 text-gray-700 ml-4">
+                              <li key={subIndex} className={`flex items-start gap-3 text-gray-700 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                 <CheckCircle className="w-4 h-4 text-primary-gold mt-1 flex-shrink-0" />
                                 <span>{subtopic}</span>
                               </li>
@@ -374,7 +270,7 @@ export default function LexpertPage() {
                       {programData.ue4.description}
                     </p>
                     <div className="inline-block bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/30">
-                      <p className="text-xs text-white/80 mb-1">Tarif</p>
+                      <p className="text-xs text-white/80 mb-1">{t.formationCommon.pricing}</p>
                       <p className="text-2xl font-bold text-white">{programData.pricing.ue4}</p>
                     </div>
                   </div>
@@ -386,31 +282,53 @@ export default function LexpertPage() {
                   <div key={index} className="border-b border-gray-200 last:border-b-0">
                     <button
                       onClick={() => toggleSection(`ue4-${index}`)}
-                      className="w-full p-6 md:p-8 hover:bg-gray-50 transition-colors text-left group"
+                      className={`w-full p-6 md:p-8 hover:bg-gray-50 transition-colors group ${isRTL ? 'text-right' : 'text-left'}`}
                     >
                       <div className="flex items-start justify-between gap-4">
+                        {/* Arrow - appears on left in RTL */}
+                        {isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `ue4-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
+
+                        {/* Title */}
                         <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors">
+                          <h4 className={`text-xl font-semibold text-primary-dark mb-2 group-hover:text-primary-gold transition-colors ${isRTL ? 'text-right' : ''}`}>
                             {partie.title}
                           </h4>
-                          <div className="flex items-center gap-4 text-sm text-gray-600">
-                            <span className="flex items-center gap-1">
-                              <Clock className="w-4 h-4" />
-                              {partie.duration}
-                            </span>
-                          </div>
                         </div>
-                        <motion.div
-                          animate={{
-                            rotate: expandedSection === `ue4-${index}` ? 180 : 0
-                          }}
-                          transition={{ duration: 0.3 }}
-                          className="text-primary-gold"
-                        >
-                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </motion.div>
+
+                        {/* Duration - appears between title and arrow */}
+                        <div className={`flex items-center gap-4 text-sm text-gray-600 flex-shrink-0 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                          <span className={`flex items-center gap-1 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                            <Clock className="w-4 h-4" />
+                            {partie.duration}
+                          </span>
+                        </div>
+
+                        {/* Arrow - appears on right in LTR */}
+                        {!isRTL && (
+                          <motion.div
+                            animate={{
+                              rotate: expandedSection === `ue4-${index}` ? 180 : 0
+                            }}
+                            transition={{ duration: 0.3 }}
+                            className="text-primary-gold flex-shrink-0"
+                          >
+                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </motion.div>
+                        )}
                       </div>
                     </button>
 
@@ -423,12 +341,12 @@ export default function LexpertPage() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 md:px-8 pb-6 md:pb-8 bg-gray-50">
+                      <div className={`px-6 md:px-8 pb-6 md:pb-8 bg-gray-50 ${isRTL ? 'text-right' : 'text-left'}`} dir={isRTL ? 'rtl' : 'ltr'}>
                         <p className="text-gray-700 mb-4">{partie.description}</p>
                         {partie.topics && (
                           <ul className="space-y-3">
                             {partie.topics.map((topic, topicIndex) => (
-                              <li key={topicIndex} className="flex items-start gap-3 text-gray-700">
+                              <li key={topicIndex} className={`flex items-start gap-3 text-gray-700 ${isRTL ? 'flex-row-reverse' : ''}`}>
                                 <div className="w-1.5 h-1.5 bg-primary-gold rounded-full mt-2 flex-shrink-0"></div>
                                 <span>{topic}</span>
                               </li>
@@ -461,7 +379,7 @@ export default function LexpertPage() {
               </p>
 
               <div className="space-y-4 mb-6">
-                <h3 className="text-xl font-semibold text-primary-dark">Repères pratiques</h3>
+                <h3 className="text-xl font-semibold text-primary-dark">{programData.preparationIntensive.practicalNotes}</h3>
                 {programData.preparationIntensive.reperes.map((repere, index) => (
                   <div key={index} className="bg-white rounded-lg p-4 border border-amber-200">
                     <p className="font-semibold text-primary-dark mb-1">{repere.ue}</p>
@@ -471,7 +389,7 @@ export default function LexpertPage() {
               </div>
 
               <div className="bg-amber-100 rounded-lg p-4 mb-4">
-                <p className="font-semibold text-amber-900 mb-2">Dates été 2023</p>
+                <p className="font-semibold text-amber-900 mb-2">{programData.preparationIntensive.summerDates}</p>
                 <p className="text-amber-800">{programData.preparationIntensive.dates}</p>
               </div>
 
@@ -492,32 +410,32 @@ export default function LexpertPage() {
             <div className="bg-gradient-to-br from-primary-gold/5 via-white to-primary-blue/5 rounded-2xl p-8 md:p-12 border-2 border-primary-gold/30 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary-dark font-playfair text-center flex items-center justify-center gap-3">
                 <DollarSign className="w-10 h-10 text-primary-gold" />
-                Tarifs de Formation
+                {programData.pricingTitle}
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-emerald-200 hover:border-emerald-400 transition-colors">
                   <h3 className="text-2xl font-bold text-primary-dark mb-2">UE1</h3>
-                  <p className="text-gray-600 mb-4">Gestion juridique, fiscale et sociale</p>
+                  <p className="text-gray-600 mb-4">{programData.ue1Label}</p>
                   <div className="flex items-baseline gap-2 mb-2">
                     <span className="text-4xl font-bold text-primary-gold">{programData.pricing.ue1}</span>
                   </div>
-                  <p className="text-sm text-gray-500">57h de cours + 4h d'examen</p>
+                  <p className="text-sm text-gray-500">{programData.ue1Duration}</p>
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-blue-200 hover:border-blue-400 transition-colors">
                   <h3 className="text-2xl font-bold text-primary-dark mb-2">UE4</h3>
-                  <p className="text-gray-600 mb-4">Comptabilité et audit</p>
+                  <p className="text-gray-600 mb-4">{programData.ue4Label}</p>
                   <div className="flex items-baseline gap-2 mb-2">
                     <span className="text-4xl font-bold text-primary-gold">{programData.pricing.ue4}</span>
                   </div>
-                  <p className="text-sm text-gray-500">47h de cours + 4h d'examen</p>
+                  <p className="text-sm text-gray-500">{programData.ue4Duration}</p>
                 </div>
               </div>
 
               <div className="mt-6 p-4 bg-primary-gold/10 rounded-lg border border-primary-gold/30">
                 <p className="text-center text-gray-700">
-                  <strong>Formation complète (UE1 + UE4):</strong> Contactez-nous pour un tarif préférentiel
+                  {programData.completeTraining}
                 </p>
               </div>
             </div>
@@ -540,17 +458,16 @@ export default function LexpertPage() {
               <div className="relative z-10">
                 <Briefcase className="w-16 h-16 text-primary-gold mx-auto mb-6" />
                 <h3 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">
-                  Prêt à Réussir votre DSCG ?
+                  {programData.ctaTitle}
                 </h3>
                 <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                  Rejoignez notre formation L'EXPERT et préparez-vous efficacement aux UE 1 et 4 du DSCG.
-                  Contactez-nous pour plus d'informations sur les inscriptions et les prochaines sessions.
+                  {programData.ctaText}
                 </p>
                 <Link
                   href="/#contact"
                   className="inline-block bg-primary-gold text-primary-dark px-10 py-4 rounded-xl hover:bg-opacity-90 transition-all font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform"
                 >
-                  Contactez-Nous Maintenant
+                  {t.formationCommon.contactNow}
                 </Link>
               </div>
             </div>

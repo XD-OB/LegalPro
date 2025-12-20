@@ -30,13 +30,16 @@ const PlaceholderLogo = ({ index }: { index: number }) => (
 );
 
 export default function ClientsPartners() {
-  const { t } = useLanguage();
+  const { t, isRTL, language } = useLanguage();
 
   // Duplicate the logos array to create seamless infinite scroll
   const duplicatedLogos = [...PARTNER_LOGOS, ...PARTNER_LOGOS];
 
+  // Calculate animation values based on direction
+  const animationDistance = -50 * PARTNER_LOGOS.length;
+
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <section className="py-16 bg-gradient-to-b from-white to-gray-50 overflow-hidden" dir="ltr">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
@@ -45,6 +48,7 @@ export default function ClientsPartners() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
+          dir={isRTL ? 'rtl' : 'ltr'}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair text-primary-dark">
             {t.clientsPartners.title}
@@ -55,7 +59,7 @@ export default function ClientsPartners() {
           </p>
         </motion.div>
 
-        {/* Infinite Auto-Scroll Carousel */}
+        {/* Infinite Auto-Scroll Carousel - Always LTR for consistent animation */}
         <div className="relative">
           {/* Gradient Overlays for fade effect */}
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
@@ -64,9 +68,10 @@ export default function ClientsPartners() {
           {/* Scrolling Container */}
           <div className="overflow-hidden py-8">
             <motion.div
+              key={language} // Re-mount on language change to reset animation
               className="flex gap-12 items-center"
               animate={{
-                x: [0, -50 * PARTNER_LOGOS.length + '%'],
+                x: [0, animationDistance + '%'],
               }}
               transition={{
                 x: {
@@ -108,6 +113,7 @@ export default function ClientsPartners() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto"
+          dir={isRTL ? 'rtl' : 'ltr'}
         >
           <div className="text-center">
             <div className="text-4xl font-bold text-primary-gold mb-2">50+</div>
